@@ -11,75 +11,95 @@
 <body>
   <header>
     <nav class="nav" id="navbar">
-      <ul class="nav-menu">
-        <li>main</li>
-        <li>portfolio</li>
-        <li>Education</li>
-        <li>links</li>
-        <li>contacts</li>
-        
+      <ul class="navMenu">
+        <li class="push"><a href="">Main</a></li>
+        <li><a href="">About me</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">links</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <h1>MARIIA PARAKETSOVA</h1>
+    
+
     <section class="objective">
-      <h1>MARIIA PARAKETSOVA</h1>
-      <img src="img/avat4.jpg" alt="Mariia's photo">
-      <h3>About me</h3>
-      <p>Web Developer 
-        Fullstack Student  
-        with an engineering degree and project management experience 
-        in Industrial Heating Cable Systems.
-      </p>
-      <p>SKILLS</p>
-      <ul class="skills">
-        <li>Web development (basics of JavaScript, HTML, CSS)</li>
-        <li>Project Management (Heating Cable Solutions)</li>
-        <li>Marketing, B2B and B2C sales</li>
-        <li>Chemical Engineering</li>
-      </ul>
+      <h3 class="objectiveTitle">About me</h3>
+      <div class="objectiveWrapper">
+        <div class="synopsis">
+          <img src="img/avat4.jpg" alt="Mariia's photo">
+          <p>Web Developer 
+            Fullstack Student  
+            with an engineering degree and project management experience 
+            in Industrial Heating Cable Systems.
+          </p>
+          <div class="cv">CV</div>
+        </div>
 
-      <p>SOFT SKILLS</p>
-      <ul class="softSkills">
-        <li>Work planning and organisation</li>
-        <li>Problem solving</li>
-        <li>Teamwork and collaboration</li>
-        <li>Positive attitude</li>
-        <li>Leadership</li>
-      </ul>
+        <div class="objectiveBox">
+          <div class="skills">
+            <p>SKILLS</p>
+            <ul>
+              <li>Web development (basics of JavaScript, HTML, CSS)</li>
+              <li>Project Management (Heating Cable Solutions)</li>
+              <li>Marketing, B2B and B2C sales</li>
+              <li>Chemical Engineering</li>
+            </ul>
+          </div>
 
-      <p>INTERESTS</p>
-      <ul class="interests">
-        <li>Coding and learning new technologies</li>
-        <li>Volunteering for "Speak Up!" non-profit project 
-          dedicated to preventing domestic violence</li>
-        <li>Gardening</li>
-      </ul>
+          <div class="sofrSkills">
+            <p>SOFT SKILLS</p>
+            <ul>
+              <li>Work planning and organisation</li>
+              <li>Problem solving</li>
+              <li>Teamwork and collaboration</li>
+              <li>Positive attitude</li>
+              <li>Leadership</li>
+            </ul>
+          </div>
 
-      <p>LANGUAGES</p>
-      <ul class="languages">
-        <li>Russian</li>
-        <li>English</li>
-        <li>Swedish</li>
-      </ul>
-      <div>CV</div>
+          <div class="interests">
+            <p>INTERESTS</p>
+            <ul>
+              <li>Coding and learning new technologies</li>
+              <li>Volunteering for "Speak Up!" non-profit project 
+                dedicated to preventing domestic violence</li>
+              <li>Gardening</li>
+            </ul>
+          </div>
+
+          <div class="languages">
+            <p>LANGUAGES</p>
+            <ul>
+              <li>Russian</li>
+              <li>English</li>
+              <li>Swedish</li>
+            </ul>
+          </div>
+        
+        </div>
+      </div>
     </section>
 
     <section class="portfolio">
       <h3>Portfolio</h3>
       <p>My last projects:</p>
       <div id="projects">
-        <div class="project-box">Quiz Game. Individual assignment.</div>
-        <div class="project-box">Website Project - Acme Events. Group assignment.</div>
-        <div class="project-box">Yatzy Game. Group assignment.</div>
+        <div class="quiz">Quiz Game. Individual assignment.</div>
+        <div class="acme">Website Project. Group assignment.</div>
+        <div class="yatzy">Yatzy Game. Group assignment.</div>
+        <div class="ship">Ship. Individual assignment.</div>
       </div>
     </section>
 
     <section class="nackademin">
       <h3>Education</h3>
       <p>I'm a student at Nackademin,
-        studying Fullstack webdevelopment open source.</p>
+        studying Fullstack webdevelopment open source.
+      </p>
       <p>NACKADEMIN provides professional higher education services. 
         The Company operates A-level education and advanced vocational education 
         in the areas of construction, design, IT, business, and health
@@ -96,7 +116,8 @@
         with the unique skills they need to build database-backed APIs and web applications. 
         A graduate of this program will be able to design and build databases for software 
         applications, create and deploy database-backed web APIs, and secure and manage user 
-        authentication and access control for an application backend.</p>
+        authentication and access control for an application backend.
+      </p>
       
       <a href=https://nackademin.se>Nackademin</a>
     </section>
