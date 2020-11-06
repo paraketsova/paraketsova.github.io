@@ -82,12 +82,16 @@ main {
     grid-area: synopsis;
 
     img {
-      width: 50%; //TEST
+      width: 50%;
     }
   
     p {
       text-align: justify;
     }
+  }
+
+  .cv img {
+    width: 10%;
   }
 
   .skills {
