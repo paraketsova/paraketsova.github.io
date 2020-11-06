@@ -97,10 +97,22 @@ main {
 .portfolio .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
   border: solid 1px blue;
 }
 .portfolio .projects div {
   border: solid 1px orangered;
+  text-align: center;
+  width: 7em;
+  height: 7em;
+  margin-bottom: 1em;
+}
+.portfolio .projects div i {
+  color: Tomato;
+}
+.portfolio .projects div p {
+  font-size: 0.7em;
 }
 
 footer {
