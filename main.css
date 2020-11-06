@@ -5,14 +5,14 @@ body {
   margin: 0;
   padding-top: 0;
   display: grid;
-  grid-template-rows: 4em 1fr 3em;
+  grid-template-rows: 4em 5fr 3em;
   grid-template-areas: "header" "main" "footer";
   grid-gap: 0;
 }
 
 header {
+  display: grid;
   grid-area: header;
-  display: flex;
   border: solid 1px blue;
   margin-top: 0;
 }
@@ -42,56 +42,62 @@ header .navMenu .push {
 
 main {
   grid-area: main;
+  padding: 24px 24px;
   /*   grid-template-rows: 3em 0.5fr 2fr 1fr 0.5fr 0.5fr; */
 }
 
 .objective {
+  border: solid 1px green;
   display: grid;
-  grid-template-rows: 3em 1fr;
-  grid-template-areas: "objectiveTitle" "objectiveWrapper";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "title    title     title" "synopsis skills    softSkills" "synopsis interests languages";
+  grid-gap: 2em;
 }
-.objective .objectiveWrapper {
-  display: grid;
-  grid-area: objectiveWrapper;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "synopsis objectiveBox";
-  grid-gap: 0 2em;
+.objective h3, .objective div {
+  border: 1px solid red;
+}
+.objective .title {
+  grid-area: title;
+  margin: 0;
+}
+.objective .synopsis {
+  grid-area: synopsis;
 }
 .objective .synopsis img {
-  grid-area: synopsys;
   width: 50%;
 }
 .objective .synopsis p {
   text-align: justify;
 }
-.objective .objectiveBox {
-  display: grid;
-  grid-area: objectiveBox;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "skills softSkills" "interests languages";
-  grid-gap: 0.8em;
-  border: solid 1px blue;
-  padding: 0;
-}
-.objective .objectiveBox div {
-  margin-top: 0;
-  border: solid 1px red;
-}
-.objective .objectiveBox .skills {
+.objective .skills {
   grid-area: skills;
 }
-.objective .objectiveBox .softSkills {
+.objective .softSkills {
   grid-area: softSkills;
 }
-.objective .objectiveBox .interests {
+.objective .interests {
   grid-area: interests;
 }
-.objective .objectiveBox .languages {
+.objective .languages {
   grid-area: languages;
 }
-.objective .objectiveBox p {
-  margin-left: 2em;
+.objective p {
+  margin-top: 0;
+}
+.objective ul {
+  margin-bottom: 0;
+}
+
+.portfolio {
+  border: solid 1px green;
+}
+.portfolio .projects {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px blue;
+}
+.portfolio .projects div {
+  border: solid 1px orangered;
 }
 
 footer {
@@ -100,27 +106,9 @@ footer {
   grid-template-columns: 30% 70%;
   width: 100%;
   max-height: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
-@media only screen and (max-width: 1400px) {
-  body {
-    padding: 36px 24px;
-  }
-
-  .objectiveWrapper {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "synopsis objectiveBox";
-  }
-
-  .objectiveBox {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "skills softSkills" "interests languages";
-  }
-}
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 960px) {
   body {
     padding: 36px 24px;
   }
@@ -129,29 +117,26 @@ footer {
     font-size: 0.7em;
     padding: 0;
   }
+
+  .objective {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title    title" "synopsis softSkills" "synopsis interests" "skills   languages";
+    grid-gap: 1.5em;
+  }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
   body {
+    padding: 0;
+  }
+
+  main {
     padding: 24px 24px;
   }
 
-  .objectiveWrapper {
+  .objective {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: "synopsis" "objectiveBox";
-  }
-  .objectiveWrapper p {
-    font-size: 0.5em;
-  }
-
-  .objectiveBox {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "skills" "softSkills" "interests" "languages";
-  }
-  .objectiveBox p,
-.objectiveBox li {
-    font-size: 0.5em;
+    grid-template-areas: "title" "synopsis" "skills" "softSkills" "interests" "languages";
+    grid-gap: 1em;
   }
 }
 

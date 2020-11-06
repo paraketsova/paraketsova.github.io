@@ -8,17 +8,17 @@ body {
   margin: 0;
   padding-top: 0;
   display: grid;
-  grid-template-rows: 4em 1fr 3em;
+  grid-template-rows: 4em 5fr 3em;
   grid-template-areas:
-  "header"
-  "main"
-  "footer";
+    "header"
+    "main"
+    "footer";
   grid-gap: 0;
 }
 
 header {
+  display: grid;
   grid-area: header;
-  display: flex;
   border: solid 1px blue;
   margin-top: 0;
 
@@ -52,33 +52,36 @@ header {
 
 }
 
-
 main {
   grid-area: main;
+  padding: 24px 24px;
+  
 
 /*   grid-template-rows: 3em 0.5fr 2fr 1fr 0.5fr 0.5fr; */
 
 }
 
 .objective {
-  display: grid;
-  grid-template-rows: 3em 1fr;
-  grid-template-areas:
-  "objectiveTitle"
-  "objectiveWrapper";
+  border: solid 1px green; // TEST
+  h3, div { border: 1px solid red; } // TEST
 
-  .objectiveWrapper {
-    display: grid;
-    grid-area: objectiveWrapper;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    "synopsis objectiveBox";
-    grid-gap: 0 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "title    title     title"
+    "synopsis skills    softSkills"
+    "synopsis interests languages";
+  grid-gap: 2em;
+
+  .title {
+    grid-area: title;
+    margin: 0;
   }
 
   .synopsis {
+    grid-area: synopsis;
+
     img {
-      grid-area: synopsys;
       width: 50%; //TEST
     }
   
@@ -87,42 +90,42 @@ main {
     }
   }
 
-  .objectiveBox {
-    display: grid;
-    grid-area: objectiveBox;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "skills softSkills"
-    "interests languages";
-    grid-gap: 0.8em;
+  .skills {
+    grid-area: skills;
+  }
+
+  .softSkills {
+    grid-area: softSkills;
+  }
+
+  .interests {
+    grid-area: interests;
+  }
+
+  .languages {
+    grid-area: languages;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio {
+  border: solid 1px green;//TEST
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
     border: solid 1px blue;//TEST
-    padding: 0;
 
 
     div {
-      margin-top: 0;
-      border: solid 1px red;//TEST
-    }
-
-    .skills {
-      grid-area: skills;
-    }
-
-    .softSkills {
-      grid-area: softSkills;
-    }
-
-    .interests {
-      grid-area: interests;
-    }
-
-    .languages {
-      grid-area: languages;
-    }
-
-    p {
-      margin-left: 2em;
+      border: solid 1px orangered;//TEST
     }
   }
 }
@@ -133,31 +136,11 @@ footer {
   grid-template-columns: 30% 70%;
   width: 100%;
   max-height: 100%;
-  position: fixed;
-  bottom: 0;
+
 }
 
 
-@media only screen and (max-width: 1400px) {
-  body {
-    padding: 36px 24px;
-  }
-
-  .objectiveWrapper {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    "synopsis objectiveBox"
-  }
-  .objectiveBox{
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "skills softSkills"
-    "interests languages";
-  }
-}
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 960px) {
   body {
     padding: 36px 24px;
   }
@@ -165,39 +148,35 @@ footer {
     font-size: 0.7em;
     padding: 0;
   }
+
+  .objective {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title    title"
+      "synopsis softSkills"
+      "synopsis interests"
+      "skills   languages";
+    grid-gap: 1.5em;  
+  }
 } 
 
- @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
   body {
+    padding: 0;
+  }
+  main {
     padding: 24px 24px;
   }
 
-  .objectiveWrapper {
+  .objective {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
     grid-template-areas:
-    "synopsis"
-    "objectiveBox";
-
-    p,
-    {
-      font-size: 0.5em;
-    }
+      "title"
+      "synopsis"
+      "skills" 
+      "softSkills"
+      "interests" 
+      "languages";
+    grid-gap: 1em;
   }
-
-  .objectiveBox {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "skills" 
-    "softSkills"
-    "interests" 
-    "languages";
-
-    p,
-    li {
-      font-size: 0.5em;
-    }
-  }
-
 }
