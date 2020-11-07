@@ -99,14 +99,21 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  align-items: center;
   border: solid 1px blue;
 }
 .portfolio .projects div {
   border: solid 1px orangered;
   text-align: center;
-  width: 7em;
-  height: 7em;
+  /* display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap; */
+  width: 6em;
+  height: 6em;
   margin-bottom: 1em;
+  padding: 1em;
 }
 .portfolio .projects div i {
   color: Tomato;
