@@ -214,9 +214,6 @@ footer {
 
 
 @media only screen and (max-width: 960px) {
-  body {
-    padding: 36px 24px;
-  }
   .navMenu li {
     font-size: 0.7em;
     padding: 0;
@@ -234,13 +231,6 @@ footer {
 } 
 
 @media only screen and (max-width: 640px) {
-  body {
-    padding: 0;
-  }
-  /* main {
-    padding: 24px 24px;
-  } */
-
   .objective {
     grid-template-columns: 1fr;
     grid-template-areas:
