@@ -1,4 +1,4 @@
-$font-stack:    Helvetica, sans-serif;
+$font-stack: SF Mono, Menlo, Ubuntu Mono, Roboto Mono, monospace;
 $primary-color: #333;
 $icon-color: tomato;
 $nav-color: rgb(255, 136, 38);
@@ -60,10 +60,10 @@ header {
 main {
   grid-area: main;
   padding: 1em 2em;
-  
+}
 
-/*   grid-template-rows: 3em 0.5fr 2fr 1fr 0.5fr 0.5fr; */
-
+h1 {
+  margin-top: 0;
 }
 
 h3:target {
@@ -99,6 +99,7 @@ h3:target {
     p {
       text-align: justify;
       padding-top: 1em;
+      padding-right: 1em;
     }
 
     .cv img {
@@ -176,6 +177,7 @@ h3:target {
 
       p {
         font-size: 0.9em;
+        margin-top: 0.5em;
       }
     }
   }
@@ -200,6 +202,8 @@ footer {
 
   h3 {
     font-size: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 0.3em;
   }
 
   .links {

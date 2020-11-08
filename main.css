@@ -1,5 +1,5 @@
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% SF Mono, Menlo, Ubuntu Mono, Roboto Mono, monospace;
   color: #333;
   min-height: 100%;
   margin: 0;
@@ -46,7 +46,10 @@ header .navMenu .push {
 main {
   grid-area: main;
   padding: 1em 2em;
-  /*   grid-template-rows: 3em 0.5fr 2fr 1fr 0.5fr 0.5fr; */
+}
+
+h1 {
+  margin-top: 0;
 }
 
 h3:target {
@@ -76,6 +79,7 @@ h3:target {
 .objective .synopsis p {
   text-align: justify;
   padding-top: 1em;
+  padding-right: 1em;
 }
 .objective .synopsis .cv img {
   width: 10%;
@@ -138,6 +142,7 @@ h3:target {
 }
 .portfolio .projects div p {
   font-size: 0.9em;
+  margin-top: 0.5em;
 }
 
 .nackademin a {
@@ -157,6 +162,8 @@ footer {
 }
 footer h3 {
   font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
 }
 footer .links {
   /*     border: solid 1px grey;//TEST */
