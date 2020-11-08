@@ -1,6 +1,7 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $icon-color: tomato;
+$nav-color: rgb(209, 61, 7);
 
 body {
   font: 100% $font-stack;
@@ -20,8 +21,9 @@ body {
 header {
   display: grid;
   grid-area: header;
-  border: solid 1px blue;
   margin-top: 0;
+  background-color: $nav-color;
+  color: white;
 
   .nav {
     top:0;
@@ -34,6 +36,7 @@ header {
     display: flex;
     list-style: none;
     margin: 0;
+    padding-left: 2em;
   
     li {
       padding: 20px;
@@ -43,6 +46,7 @@ header {
   
     a {
       text-decoration: none;
+      color: white;
     }
   
     .push {
@@ -55,7 +59,7 @@ header {
 
 main {
   grid-area: main;
-  padding: 24px 24px;
+  padding: 1em 2em;
   
 
 /*   grid-template-rows: 3em 0.5fr 2fr 1fr 0.5fr 0.5fr; */
@@ -63,8 +67,8 @@ main {
 }
 
 .objective {
-  border: solid 1px green; // TEST
-  h3, div { border: 1px solid red; } // TEST
+   /* border: solid 1px green; // TEST
+  h3, div { border: 1px solid red; } // TEST */
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -96,14 +100,6 @@ main {
     }
   }
 
-  .box {
-    padding: 1em;
-
-    p {
-      padding-left: 1.5em;
-    }
-  }
-
   .skills {
     grid-area: skills;
   }
@@ -126,12 +122,18 @@ main {
 
   ul {
     margin-bottom: 0;
+    padding-left: 1em;
+
+    li {
+      padding-left: -2em;
+    }
   }
+
 }
 
 .portfolio {
 
-  border: solid 1px green;//TEST
+/*   border: solid 1px green;//TEST */
 
   .projects {
     display: flex;
@@ -139,7 +141,7 @@ main {
     justify-content: space-between;
     align-content: space-between;
     align-items: center;
-    border: solid 1px blue;//TEST
+/*     border: solid 1px blue;//TEST */
 
 
     div {
@@ -159,6 +161,11 @@ main {
         color: $icon-color;
         font-size: 1.5em;
         padding-bottom: 0.5em;
+      }
+
+      a {
+        text-decoration: none;
+        color: $icon-color;
       }
 
       p {
@@ -183,23 +190,12 @@ footer {
   max-height: 100%;
   bottom: 0;
 
-/* footer {
-  grid-area: footer;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  width: 100%;
-  max-height: 100%;
-  padding-bottom: 2em;
-  border: solid 1px orangered;//TEST
-*/
   h3 {
     font-size: 1em;
   }
 
   .links {
-    border: solid 1px grey;//TEST
+/*     border: solid 1px grey;//TEST */
     padding-left: 2em;
 
     i {
@@ -209,7 +205,7 @@ footer {
     }
   }
   .contact {
-    border: solid 1px green;//TEST
+    /* border: solid 1px green;//TEST */
     padding-left: 2em;
     padding-bottom: 1em;
     

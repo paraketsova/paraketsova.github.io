@@ -13,8 +13,9 @@ body {
 header {
   display: grid;
   grid-area: header;
-  border: solid 1px blue;
   margin-top: 0;
+  background-color: #d13d07;
+  color: white;
 }
 header .nav {
   top: 0;
@@ -26,6 +27,7 @@ header .navMenu {
   display: flex;
   list-style: none;
   margin: 0;
+  padding-left: 2em;
 }
 header .navMenu li {
   padding: 20px;
@@ -34,6 +36,7 @@ header .navMenu li {
 }
 header .navMenu a {
   text-decoration: none;
+  color: white;
 }
 header .navMenu .push {
   margin-right: auto;
@@ -42,19 +45,17 @@ header .navMenu .push {
 
 main {
   grid-area: main;
-  padding: 24px 24px;
+  padding: 1em 2em;
   /*   grid-template-rows: 3em 0.5fr 2fr 1fr 0.5fr 0.5fr; */
 }
 
 .objective {
-  border: solid 1px green;
+  /* border: solid 1px green; // TEST
+  h3, div { border: 1px solid red; } // TEST */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "title    title     title" "synopsis skills    softSkills" "synopsis interests languages";
   grid-gap: 2em;
-}
-.objective h3, .objective div {
-  border: 1px solid red;
 }
 .objective .title {
   grid-area: title;
@@ -73,12 +74,6 @@ main {
 .objective .synopsis .cv img {
   width: 10%;
 }
-.objective .box {
-  padding: 1em;
-}
-.objective .box p {
-  padding-left: 1.5em;
-}
 .objective .skills {
   grid-area: skills;
 }
@@ -96,10 +91,14 @@ main {
 }
 .objective ul {
   margin-bottom: 0;
+  padding-left: 1em;
+}
+.objective ul li {
+  padding-left: -2em;
 }
 
 .portfolio {
-  border: solid 1px green;
+  /*   border: solid 1px green;//TEST */
 }
 .portfolio .projects {
   display: flex;
@@ -107,7 +106,7 @@ main {
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
-  border: solid 1px blue;
+  /*     border: solid 1px blue;//TEST */
 }
 .portfolio .projects div {
   border: solid 1px orangered;
@@ -127,6 +126,10 @@ main {
   font-size: 1.5em;
   padding-bottom: 0.5em;
 }
+.portfolio .projects div a {
+  text-decoration: none;
+  color: tomato;
+}
 .portfolio .projects div p {
   font-size: 0.9em;
 }
@@ -143,23 +146,12 @@ footer {
   width: 100%;
   max-height: 100%;
   bottom: 0;
-  /* footer {
-    grid-area: footer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    width: 100%;
-    max-height: 100%;
-    padding-bottom: 2em;
-    border: solid 1px orangered;//TEST
-  */
 }
 footer h3 {
   font-size: 1em;
 }
 footer .links {
-  border: solid 1px grey;
+  /*     border: solid 1px grey;//TEST */
   padding-left: 2em;
 }
 footer .links i {
@@ -168,7 +160,7 @@ footer .links i {
   font-size: 1.2em;
 }
 footer .contact {
-  border: solid 1px green;
+  /* border: solid 1px green;//TEST */
   padding-left: 2em;
   padding-bottom: 1em;
 }
