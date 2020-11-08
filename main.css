@@ -49,6 +49,12 @@ main {
   /*   grid-template-rows: 3em 0.5fr 2fr 1fr 0.5fr 0.5fr; */
 }
 
+h3:target {
+  background-color: #d13d07;
+  color: #fff;
+  padding: 5px;
+}
+
 .objective {
   /* border: solid 1px green; // TEST
   h3, div { border: 1px solid red; } // TEST */

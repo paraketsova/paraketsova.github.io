@@ -66,6 +66,12 @@ main {
 
 }
 
+h3:target {
+  background-color: $nav-color;
+  color: #fff;
+  padding: 5px;
+ }
+
 .objective {
    /* border: solid 1px green; // TEST
   h3, div { border: 1px solid red; } // TEST */
