@@ -167,6 +167,14 @@ main {
     }
   }
 }
+
+.nackademin {
+  a {
+    text-decoration: none;
+    color: $icon-color;
+  }
+}
+
 footer {
   display: grid;
   grid-area: footer;
@@ -186,6 +194,9 @@ footer {
   padding-bottom: 2em;
   border: solid 1px orangered;//TEST
 */
+  h3 {
+    font-size: 1em;
+  }
 
   .links {
     border: solid 1px grey;//TEST
@@ -194,7 +205,7 @@ footer {
     i {
       color: $icon-color;
       padding-right: 1em;
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
   }
   .contact {
@@ -207,9 +218,6 @@ footer {
       text-decoration: none;
     }
   }
-
-
-
 } 
 
 
@@ -241,5 +249,20 @@ footer {
       "interests" 
       "languages";
     grid-gap: 1em;
+  }
+  .footer {
+    .links,
+    .contact {
+      padding-left: 1em;
+
+      i {
+        padding-right: 0.5em;
+        font-size: 1em;
+      }
+
+      a {
+        font-size: 0.8em;
+      }
+    }
   }
 }
