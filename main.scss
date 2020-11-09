@@ -1,11 +1,16 @@
-$font-stack: 'Roboto Mono', monospace;
+$primary-font: 'Roboto Mono', monospace;
 $primary-color: #333;
 $icon-color: tomato;
+$titel-color: rgb(255, 52, 38);
 $nav-color: rgb(255, 136, 38);
+$dark-color: rgb(103, 103, 104);
+$background: #faf7f0;
+$light-shadow: wheat;// color for box
 
 
 body {
-  font: 100% $font-stack;
+  
+  font: 100% $primary-font;
   color: $primary-color;
   min-height:100%;
   margin: 0;
@@ -66,22 +71,60 @@ main {
   padding: 1em 2em;
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 3em;
-  color: $icon-color;
-  text-shadow: 
-  -0.0075em 0.0075em 0 mix(#fff, rgb(255, 136, 38), 94%),
-  0.005em 0.005em 0 mix(#fff, rgb(255, 136, 38), 60%),
-  0.01em 0.01em 0 mix(#fff, rgb(255, 136, 38), 62%), 
-  0.015em 0.015em mix(#fff, rgb(255, 136, 38), 64%), 
-  0.02em 0.02em 0 mix(#fff, rgb(255, 136, 38), 66%), 
-  0.025em 0.025em 0 mix(#fff, rgb(255, 136, 38), 68%),
-  0.03em 0.03em 0 mix(#fff, rgb(255, 136, 38), 70%),
-  0.035em 0.035em 0 mix(#fff, rgb(255, 136, 38), 72%);
-  
-}
 
+#text {
+  font-family: $primary_font;
+  margin-top: 1em;
+  font-size: 3em;
+  line-height: 1em;
+  position: relative;
+  transform: translateY(-50%);
+  &:hover {
+    cursor: default;
+  }
+  
+  .wrapper {
+    display: inline-block;
+    top: -900px;
+    position: relative;
+    height: 150px; /* default */
+    width: 90px; /* default */
+    transition: ease 0.3s all; // falling letters
+    
+    span {
+      position: absolute;
+      top:0;
+      right:0;
+
+      transition: ease 0.3s all; // shadow on hover
+      
+      &.letter-2 {
+        color: $nav-color;
+      }
+
+      &.letter-1 {
+        color: $titel-color;
+        z-index: 1;
+        
+        &:hover {
+           top: -3px;
+           right: -3px;
+           
+           ~ .letter-2 {
+             top: 3px;
+             right: 3px;
+           }
+        }
+      }
+      
+      &.space {
+        padding: 0;
+        min-width: 30px;
+        display: inline-block;
+      }
+    }
+  }
+}
 
 
 h3:target {
@@ -216,7 +259,7 @@ footer {
   width: 100%;
   max-height: 100%;
   bottom: 0;
-  background-color: rgb(103, 103, 104);
+  background-color: $dark-color;
   color: white;
 
   h3 {
@@ -277,6 +320,10 @@ footer {
             
       }
     }
+  }
+  
+  #text {
+    font-size: 1.7em;
   }
 
   .objective {
