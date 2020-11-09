@@ -1,5 +1,5 @@
 // type anything here
-const text = 'Mariia Paraketsova';
+const text = 'Mariia Paraketsova'; // // transormation for name and last name (works together with SCSS part)
 
 // this function turns a string into an array
 const createLetterArray = (string) => {
