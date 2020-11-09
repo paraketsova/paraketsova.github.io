@@ -1,5 +1,5 @@
 body {
-  font: 100% SF Mono, Menlo, Ubuntu Mono, Roboto Mono, monospace;
+  font: 100% "Roboto Mono", monospace;
   color: #333;
   min-height: 100%;
   margin: 0;
@@ -16,6 +16,7 @@ header {
   margin-top: 0;
   background-color: #ff8826;
   color: white;
+  width: 100%;
 }
 header .nav {
   top: 0;
@@ -33,6 +34,7 @@ header .navMenu li {
   padding: 20px;
   font-size: 1em;
   margin-right: 1em;
+  float: left;
 }
 header .navMenu a {
   text-decoration: none;
@@ -41,6 +43,7 @@ header .navMenu a {
 header .navMenu .push {
   margin-right: auto;
   padding-left: 0em;
+  float: left;
 }
 
 main {
@@ -50,6 +53,9 @@ main {
 
 h1 {
   margin-top: 0;
+  font-size: 3em;
+  color: tomato;
+  text-shadow: -0.0075em 0.0075em 0 #fff8f2, 0.005em 0.005em 0 #ffcfa8, 0.01em 0.01em 0 #ffd2ad, 0.015em 0.015em #ffd4b1, 0.02em 0.02em 0 #ffd7b5, 0.025em 0.025em 0 #ffd9ba, 0.03em 0.03em 0 #ffdbbe, 0.035em 0.035em 0 #ffdec2;
 }
 
 h3:target {
@@ -196,6 +202,13 @@ footer .contact a {
   }
 }
 @media only screen and (max-width: 640px) {
+  header .navMenu li {
+    font-size: 0.6em;
+    padding: 2em 0.3em;
+    margin-right: 0.5em;
+    margin-top: 0.6em;
+  }
+
   .objective {
     grid-template-columns: 1fr;
     grid-template-areas: "title" "synopsis" "skills" "softSkills" "interests" "languages";

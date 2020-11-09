@@ -1,7 +1,9 @@
-$font-stack: SF Mono, Menlo, Ubuntu Mono, Roboto Mono, monospace;
+$font-stack: 'Roboto Mono', monospace;
 $primary-color: #333;
 $icon-color: tomato;
 $nav-color: rgb(255, 136, 38);
+
+
 
 body {
   font: 100% $font-stack;
@@ -24,6 +26,7 @@ header {
   margin-top: 0;
   background-color: $nav-color;
   color: white;
+  width: 100%;
 
   .nav {
     top:0;
@@ -42,6 +45,7 @@ header {
       padding: 20px;
       font-size: 1em;
       margin-right: 1em;
+      float: left;
     }
   
     a {
@@ -52,6 +56,7 @@ header {
     .push {
       margin-right: auto;
       padding-left: 0em;
+      float: left;
     }
   }
 
@@ -64,6 +69,18 @@ main {
 
 h1 {
   margin-top: 0;
+  font-size: 3em;
+  color: $icon-color;
+  text-shadow: 
+		-0.0075em 0.0075em 0 mix(#fff, rgb(255, 136, 38), 94%),
+		0.005em 0.005em 0 mix(#fff, rgb(255, 136, 38), 60%),
+		0.01em 0.01em 0 mix(#fff, rgb(255, 136, 38), 62%), 
+		0.015em 0.015em mix(#fff, rgb(255, 136, 38), 64%), 
+		0.02em 0.02em 0 mix(#fff, rgb(255, 136, 38), 66%), 
+		0.025em 0.025em 0 mix(#fff, rgb(255, 136, 38), 68%),
+		0.03em 0.03em 0 mix(#fff, rgb(255, 136, 38), 70%),
+		0.035em 0.035em 0 mix(#fff, rgb(255, 136, 38), 72%);
+
 }
 
 h3:target {
@@ -246,6 +263,20 @@ footer {
 } 
 
 @media only screen and (max-width: 640px) {
+  header {
+
+    .navMenu {
+      
+      li {
+        font-size: 0.6em;
+        padding: 2em 0.3em;
+        margin-right: 0.5em;
+        margin-top: 0.6em;
+            
+      }
+    }
+  }
+
   .objective {
     grid-template-columns: 1fr;
     grid-template-areas:
