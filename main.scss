@@ -4,7 +4,6 @@ $icon-color: tomato;
 $nav-color: rgb(255, 136, 38);
 
 
-
 body {
   font: 100% $font-stack;
   color: $primary-color;
@@ -72,22 +71,25 @@ h1 {
   font-size: 3em;
   color: $icon-color;
   text-shadow: 
-		-0.0075em 0.0075em 0 mix(#fff, rgb(255, 136, 38), 94%),
-		0.005em 0.005em 0 mix(#fff, rgb(255, 136, 38), 60%),
-		0.01em 0.01em 0 mix(#fff, rgb(255, 136, 38), 62%), 
-		0.015em 0.015em mix(#fff, rgb(255, 136, 38), 64%), 
-		0.02em 0.02em 0 mix(#fff, rgb(255, 136, 38), 66%), 
-		0.025em 0.025em 0 mix(#fff, rgb(255, 136, 38), 68%),
-		0.03em 0.03em 0 mix(#fff, rgb(255, 136, 38), 70%),
-		0.035em 0.035em 0 mix(#fff, rgb(255, 136, 38), 72%);
-
+  -0.0075em 0.0075em 0 mix(#fff, rgb(255, 136, 38), 94%),
+  0.005em 0.005em 0 mix(#fff, rgb(255, 136, 38), 60%),
+  0.01em 0.01em 0 mix(#fff, rgb(255, 136, 38), 62%), 
+  0.015em 0.015em mix(#fff, rgb(255, 136, 38), 64%), 
+  0.02em 0.02em 0 mix(#fff, rgb(255, 136, 38), 66%), 
+  0.025em 0.025em 0 mix(#fff, rgb(255, 136, 38), 68%),
+  0.03em 0.03em 0 mix(#fff, rgb(255, 136, 38), 70%),
+  0.035em 0.035em 0 mix(#fff, rgb(255, 136, 38), 72%);
+  
 }
+
+
 
 h3:target {
   background-color: $nav-color;
   color: #fff;
   padding: 5px;
- }
+}
+
 
 .objective {
    /* border: solid 1px green; // TEST
