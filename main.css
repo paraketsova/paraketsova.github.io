@@ -99,10 +99,20 @@ main {
   display: inline-block;
 }
 
+h3 i {
+  color: #ff8826;
+}
+h3 i:hover {
+  color: tomato;
+}
+
 h3:target {
   background-color: #ff8826;
   color: #fff;
   padding: 5px;
+}
+h3:target i {
+  color: white;
 }
 
 .objective {

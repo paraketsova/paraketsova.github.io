@@ -126,11 +126,24 @@ main {
   }
 }
 
+h3 {
+  i {
+    color: $nav-color;
+  }
+
+  i:hover {
+    color: $icon-color;
+  }
+}
 
 h3:target {
   background-color: $nav-color;
   color: #fff;
   padding: 5px;
+
+  i {
+    color: white;
+  }
 }
 
 
