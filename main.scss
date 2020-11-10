@@ -1,4 +1,4 @@
-/* ====== BASE ====== */
+/* ========= BASE ========= */
 $primary-font: 'Roboto Mono', monospace;
 $primary-color: #333;
 $icon-color: tomato;
@@ -6,7 +6,36 @@ $titel-color: rgb(255, 52, 38);
 $nav-color: rgb(255, 136, 38);
 $dark-color: rgb(103, 103, 104);
 $background: #faf7f0;
+$light-navi-color: rgb(250, 210, 151);
 $shadow-color: #444;
+
+/* ========= MIXINS =========== */
+
+@mixin div-color ($h-color, $h-bgcolor, $h-iconscolor, $h-border-color) {
+  color: $h-color;
+  background-color: $h-bgcolor;
+  box-shadow: 0 0 0.8em $shadow-color;
+  border-color: $h-border-color;
+
+  .fas i {
+    color: $titel-color;
+  }
+
+  i.fas:hover,
+  i.fab:hover {
+    color: $h-iconscolor;
+  }
+
+  .titelProject {
+    color: $h-iconscolor;
+  }
+
+  .iconRepoProject i {
+    color: $h-color;
+  }
+}
+
+/* =========== BASE =========== */
 
 html {
   scroll-behavior: smooth;
@@ -28,7 +57,7 @@ body {
   grid-gap: 0;
 }
 
-/* ===== HEADER AND NAVIGATION ==== */
+/* ======== HEADER AND NAVIGATION ======== */
 
 header {
   display: grid;
@@ -73,14 +102,14 @@ header {
 
 }
 
-/* ==== MAIN CONTENT ==== */
+/* ========= MAIN CONTENT ========= */
 
 main {
   grid-area: main;
   padding: 1em 2em;
 }
 
-/* === TEXT: NAME + LAST NAME === */
+/* ======= TEXT: NAME + LAST NAME ======= */
 
 #text { // transormation for name and last name (works together with Js part)
   font-family: $primary_font;
@@ -160,7 +189,8 @@ h3:target {
   }
 }
 
-/* === ABOUT ME === */
+/* ======== ABOUT ME ========= */
+
 .objective {
    /* border: solid 1px green; // TEST
   h3, div { border: 1px solid red; } // TEST */
@@ -195,7 +225,7 @@ h3:target {
     }
 
     .cv img {
-      width: 10%;
+      width: 3em;
     }
   }
 
@@ -219,6 +249,10 @@ h3:target {
     margin-top: 0;
   }
 
+  .box p {
+    font-weight: bold;
+  }
+
   ul {
     margin-bottom: 0;
     padding-left: 1em;
@@ -229,18 +263,16 @@ h3:target {
   }
 
 }
- /* === PORTFOLIO === */
+
+ /* ====== PORTFOLIO ====== */
+
 .portfolio {
-
-/*   border: solid 1px green;//TEST */
-
   .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     align-items: center;
-/*     border: solid 1px blue;//TEST */
 
 
     div {
@@ -251,31 +283,48 @@ h3:target {
       align-content: center;
       justify-content: center;
       flex-wrap: wrap; */
-      width: 7em;
-      height: 7em;
+      width: 8em;
+      height: 8em;
       margin-bottom: 1em;
       padding: 1em;
 
       i {
         color: $icon-color;
         font-size: 1.5em;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.2em;
       }
 
-      a {
+      .titelProject {
         text-decoration: none;
         color: $icon-color;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-bottom: 0;
+        font-size: 0.9em;
+      }
+
+      .iconRepoProject i {
+        color: $shadow-color;
+        font-size: 1.2em;
+        padding-top: 0;
       }
 
       p {
-        font-size: 0.9em;
-        margin-top: 0.5em;
+        font-size: 0.7em;
+        margin-top: 0.6em;
       }
+    }
+
+    div:hover {
+      @include div-color ($nav-color, $dark-color, white, $dark-color);
     }
   }
 }
 
-/* === EDUCATION === */
+/* ====== EDUCATION ====== */
+
 .nackademin {
   a {
     text-decoration: none;
@@ -283,7 +332,7 @@ h3:target {
   }
 }
 
-/* === FOOTER === */
+/* ======= FOOTER ======= */
 
 footer {
   display: grid;
@@ -302,7 +351,6 @@ footer {
   }
 
   .links {
-/*     border: solid 1px grey;//TEST */
     padding-left: 2em;
 
     #iconGitHub,
@@ -333,7 +381,8 @@ footer {
   }
 } 
 
-/* ==== MEDIA QUERIES ==== */
+
+/* ======= MEDIA QUERIES ======= */
 
 @media only screen and (max-width: 960px) {
   .navMenu li {
@@ -348,7 +397,13 @@ footer {
       "synopsis softSkills"
       "synopsis interests"
       "skills   languages";
-    grid-gap: 1.5em;  
+    grid-gap: 1.5em;
+
+    .synopsis {
+      #photo {
+        width: 127px;
+      }
+    }
   }
 } 
 
@@ -381,7 +436,10 @@ footer {
     grid-gap: 1em;
     .synopsis {
       #photo {
-        width: 35%;
+        width: 127px;
+      }
+      .cv img {
+        width: 2em;
       }
     }
 

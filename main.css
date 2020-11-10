@@ -1,4 +1,6 @@
-/* ====== BASE ====== */
+/* ========= BASE ========= */
+/* ========= MIXINS =========== */
+/* =========== BASE =========== */
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +17,7 @@ body {
   grid-gap: 0;
 }
 
-/* ===== HEADER AND NAVIGATION ==== */
+/* ======== HEADER AND NAVIGATION ======== */
 header {
   display: grid;
   grid-area: header;
@@ -53,13 +55,13 @@ header .navMenu .push {
   float: left;
 }
 
-/* ==== MAIN CONTENT ==== */
+/* ========= MAIN CONTENT ========= */
 main {
   grid-area: main;
   padding: 1em 2em;
 }
 
-/* === TEXT: NAME + LAST NAME === */
+/* ======= TEXT: NAME + LAST NAME ======= */
 #text {
   font-family: "Roboto Mono", monospace;
   margin-top: 1em;
@@ -126,7 +128,7 @@ h3:target i {
   color: white;
 }
 
-/* === ABOUT ME === */
+/* ======== ABOUT ME ========= */
 .objective {
   /* border: solid 1px green; // TEST
   h3, div { border: 1px solid red; } // TEST */
@@ -154,7 +156,7 @@ h3:target i {
   padding-right: 1em;
 }
 .objective .synopsis .cv img {
-  width: 10%;
+  width: 3em;
 }
 .objective .skills {
   grid-area: skills;
@@ -171,6 +173,9 @@ h3:target i {
 .objective p {
   margin-top: 0;
 }
+.objective .box p {
+  font-weight: bold;
+}
 .objective ul {
   margin-bottom: 0;
   padding-left: 1em;
@@ -179,17 +184,13 @@ h3:target i {
   padding-left: -2em;
 }
 
-/* === PORTFOLIO === */
-.portfolio {
-  /*   border: solid 1px green;//TEST */
-}
+/* ====== PORTFOLIO ====== */
 .portfolio .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
-  /*     border: solid 1px blue;//TEST */
 }
 .portfolio .projects div {
   border: solid 1px orangered;
@@ -199,32 +200,62 @@ h3:target i {
   align-content: center;
   justify-content: center;
   flex-wrap: wrap; */
-  width: 7em;
-  height: 7em;
+  width: 8em;
+  height: 8em;
   margin-bottom: 1em;
   padding: 1em;
 }
 .portfolio .projects div i {
   color: tomato;
   font-size: 1.5em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.2em;
 }
-.portfolio .projects div a {
+.portfolio .projects div .titelProject {
   text-decoration: none;
   color: tomato;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-bottom: 0;
+  font-size: 0.9em;
+}
+.portfolio .projects div .iconRepoProject i {
+  color: #444;
+  font-size: 1.2em;
+  padding-top: 0;
 }
 .portfolio .projects div p {
-  font-size: 0.9em;
-  margin-top: 0.5em;
+  font-size: 0.7em;
+  margin-top: 0.6em;
+}
+.portfolio .projects div:hover {
+  color: #ff8826;
+  background-color: #676768;
+  box-shadow: 0 0 0.8em #444;
+  border-color: #676768;
+}
+.portfolio .projects div:hover .fas i {
+  color: #ff3426;
+}
+.portfolio .projects div:hover i.fas:hover,
+.portfolio .projects div:hover i.fab:hover {
+  color: white;
+}
+.portfolio .projects div:hover .titelProject {
+  color: white;
+}
+.portfolio .projects div:hover .iconRepoProject i {
+  color: #ff8826;
 }
 
-/* === EDUCATION === */
+/* ====== EDUCATION ====== */
 .nackademin a {
   text-decoration: none;
   color: tomato;
 }
 
-/* === FOOTER === */
+/* ======= FOOTER ======= */
 footer {
   display: grid;
   grid-area: footer;
@@ -241,7 +272,6 @@ footer h3 {
   margin-bottom: 0.6em;
 }
 footer .links {
-  /*     border: solid 1px grey;//TEST */
   padding-left: 2em;
 }
 footer .links #iconGitHub,
@@ -267,7 +297,7 @@ footer .contact a:hover {
   color: white;
 }
 
-/* ==== MEDIA QUERIES ==== */
+/* ======= MEDIA QUERIES ======= */
 @media only screen and (max-width: 960px) {
   .navMenu li {
     font-size: 0.7em;
@@ -278,6 +308,9 @@ footer .contact a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title    title" "synopsis softSkills" "synopsis interests" "skills   languages";
     grid-gap: 1.5em;
+  }
+  .objective .synopsis #photo {
+    width: 127px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -298,7 +331,10 @@ footer .contact a:hover {
     grid-gap: 1em;
   }
   .objective .synopsis #photo {
-    width: 35%;
+    width: 127px;
+  }
+  .objective .synopsis .cv img {
+    width: 2em;
   }
 
   .footer .links,
