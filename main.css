@@ -1,4 +1,8 @@
 /* ====== BASE ====== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 100% "Roboto Mono", monospace;
   color: #333;
@@ -115,7 +119,8 @@ h3 i:hover {
 h3:target {
   background-color: #ff8826;
   color: #fff;
-  padding: 5px;
+  padding: 0.5em;
+  box-shadow: 0 0 0.5em #444;
 }
 h3:target i {
   color: white;
