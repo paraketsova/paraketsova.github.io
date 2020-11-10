@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding-top: 0;
   display: grid;
-  grid-template-rows: 4em 5fr 5em;
+  grid-template-rows: 4em 5fr 6em;
   grid-template-areas:
     "header"
     "main"
@@ -184,8 +184,8 @@ h3:target {
     #photo {
       width: 45%;
       border-radius: 50%;
-      border: 0.2em $icon-color solid;
-      box-shadow: 0 0 0.5em $shadow-color;
+      /* border: 0.2em $icon-color solid; */
+      box-shadow: 0 0 0.8em $shadow-color;
     }
   
     p {
@@ -297,21 +297,24 @@ footer {
 
   h3 {
     font-size: 1em;
-    margin-top: 0.8em;
-    margin-bottom: 0.3em;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
   }
 
   .links {
 /*     border: solid 1px grey;//TEST */
     padding-left: 2em;
 
-    i {
+    #iconGitHub,
+    #iconLinkedin {
       color: $nav-color;
       padding-right: 1em;
+      padding-top: 0.3em;
       font-size: 1.3em;
     }
 
-    i:hover {
+    #iconGitHub:hover,
+    #iconLinkedin:hover {
       color: white;
     }
   }

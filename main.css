@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding-top: 0;
   display: grid;
-  grid-template-rows: 4em 5fr 5em;
+  grid-template-rows: 4em 5fr 6em;
   grid-template-areas: "header" "main" "footer";
   grid-gap: 0;
 }
@@ -145,8 +145,8 @@ h3:target i {
 .objective .synopsis #photo {
   width: 45%;
   border-radius: 50%;
-  border: 0.2em tomato solid;
-  box-shadow: 0 0 0.5em #444;
+  /* border: 0.2em $icon-color solid; */
+  box-shadow: 0 0 0.8em #444;
 }
 .objective .synopsis p {
   text-align: justify;
@@ -237,19 +237,22 @@ footer {
 }
 footer h3 {
   font-size: 1em;
-  margin-top: 0.8em;
-  margin-bottom: 0.3em;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
 }
 footer .links {
   /*     border: solid 1px grey;//TEST */
   padding-left: 2em;
 }
-footer .links i {
+footer .links #iconGitHub,
+footer .links #iconLinkedin {
   color: #ff8826;
   padding-right: 1em;
+  padding-top: 0.3em;
   font-size: 1.3em;
 }
-footer .links i:hover {
+footer .links #iconGitHub:hover,
+footer .links #iconLinkedin:hover {
   color: white;
 }
 footer .contact {
