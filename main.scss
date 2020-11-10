@@ -5,28 +5,27 @@ $icon-color: tomato;
 $titel-color: rgb(255, 52, 38);
 $nav-color: rgb(255, 136, 38);
 $dark-color: rgb(103, 103, 104);
+$soft-dark-color: rgb(209, 209, 209);
 $background: #faf7f0;
 $light-navi-color: rgb(250, 210, 151);
 $shadow-color: #444;
 
 /* ========= MIXINS =========== */
 
-@mixin div-color ($h-color, $h-bgcolor, $h-iconscolor, $h-border-color) {
+@mixin div-color ($h-color, $h-bgcolor, $h-titel-color, $h-iconscolor, $h-border-color) {
   color: $h-color;
   background-color: $h-bgcolor;
   box-shadow: 0 0 0.8em $shadow-color;
   border-color: $h-border-color;
 
-  .fas i {
-    color: $titel-color;
+  .projectLink i,
+  .projectLink p {
+    color: $h-titel-color;
   }
 
-  i.fas:hover,
+  .projectLink i:hover,
+  .projectLink p:hover,
   i.fab:hover {
-    color: $h-iconscolor;
-  }
-
-  .titelProject {
     color: $h-iconscolor;
   }
 
@@ -116,6 +115,7 @@ main {
   margin-top: 1em;
   font-size: 3em;
   line-height: 1em;
+  overflow-wrap: normal;
   position: relative;
   transform: translateY(-50%);
   &:hover {
@@ -278,15 +278,14 @@ h3:target {
     div {
       border: solid 1px orangered;//TEST
       text-align: center;
-      /* display: flex;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      flex-wrap: wrap; */
       width: 8em;
       height: 8em;
       margin-bottom: 1em;
       padding: 1em;
+
+     a {
+      text-decoration: none;
+     }
 
       i {
         color: $icon-color;
@@ -308,7 +307,7 @@ h3:target {
       .iconRepoProject i {
         color: $shadow-color;
         font-size: 1.2em;
-        padding-top: 0;
+        padding-top: 0.2em;
       }
 
       p {
@@ -318,7 +317,7 @@ h3:target {
     }
 
     div:hover {
-      @include div-color ($nav-color, $dark-color, white, $dark-color);
+      @include div-color (black, $soft-dark-color, $icon-color ,white, $dark-color);
     }
   }
 }

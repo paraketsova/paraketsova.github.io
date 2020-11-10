@@ -67,6 +67,7 @@ main {
   margin-top: 1em;
   font-size: 3em;
   line-height: 1em;
+  overflow-wrap: normal;
   position: relative;
   transform: translateY(-50%);
 }
@@ -195,15 +196,13 @@ h3:target i {
 .portfolio .projects div {
   border: solid 1px orangered;
   text-align: center;
-  /* display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap; */
   width: 8em;
   height: 8em;
   margin-bottom: 1em;
   padding: 1em;
+}
+.portfolio .projects div a {
+  text-decoration: none;
 }
 .portfolio .projects div i {
   color: tomato;
@@ -223,30 +222,29 @@ h3:target i {
 .portfolio .projects div .iconRepoProject i {
   color: #444;
   font-size: 1.2em;
-  padding-top: 0;
+  padding-top: 0.2em;
 }
 .portfolio .projects div p {
   font-size: 0.7em;
   margin-top: 0.6em;
 }
 .portfolio .projects div:hover {
-  color: #ff8826;
-  background-color: #676768;
+  color: black;
+  background-color: #d1d1d1;
   box-shadow: 0 0 0.8em #444;
   border-color: #676768;
 }
-.portfolio .projects div:hover .fas i {
-  color: #ff3426;
+.portfolio .projects div:hover .projectLink i,
+.portfolio .projects div:hover .projectLink p {
+  color: tomato;
 }
-.portfolio .projects div:hover i.fas:hover,
+.portfolio .projects div:hover .projectLink i:hover,
+.portfolio .projects div:hover .projectLink p:hover,
 .portfolio .projects div:hover i.fab:hover {
   color: white;
 }
-.portfolio .projects div:hover .titelProject {
-  color: white;
-}
 .portfolio .projects div:hover .iconRepoProject i {
-  color: #ff8826;
+  color: black;
 }
 
 /* ====== EDUCATION ====== */
