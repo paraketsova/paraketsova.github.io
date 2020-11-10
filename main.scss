@@ -1,3 +1,4 @@
+/* ====== BASE ====== */
 $primary-font: 'Roboto Mono', monospace;
 $primary-color: #333;
 $icon-color: tomato;
@@ -5,7 +6,7 @@ $titel-color: rgb(255, 52, 38);
 $nav-color: rgb(255, 136, 38);
 $dark-color: rgb(103, 103, 104);
 $background: #faf7f0;
-$light-shadow: wheat;// color for box
+$shadow-color: #444;
 
 
 body {
@@ -24,6 +25,8 @@ body {
   grid-gap: 0;
 }
 
+/* ===== HEADER AND NAVIGATION ==== */
+
 header {
   display: grid;
   grid-area: header;
@@ -31,6 +34,7 @@ header {
   background-color: $nav-color;
   color: white;
   width: 100%;
+  box-shadow: 0 0 0.5em $shadow-color;
 
   .nav {
     top:0;
@@ -66,11 +70,14 @@ header {
 
 }
 
+/* ==== MAIN CONTENT ==== */
+
 main {
   grid-area: main;
   padding: 1em 2em;
 }
 
+/* === TEXT: NAME + LAST NAME === */
 
 #text { // transormation for name and last name (works together with Js part)
   font-family: $primary_font;
@@ -126,6 +133,8 @@ main {
   }
 }
 
+/* === TITELS === */
+
 h3 {
   i {
     color: $nav-color;
@@ -146,7 +155,7 @@ h3:target {
   }
 }
 
-
+/* === ABOUT ME === */
 .objective {
    /* border: solid 1px green; // TEST
   h3, div { border: 1px solid red; } // TEST */
@@ -167,8 +176,11 @@ h3:target {
   .synopsis {
     grid-area: synopsis;
 
-    img {
+    #photo {
       width: 45%;
+      border-radius: 50%;
+      border: 0.2em $icon-color solid;
+      box-shadow: 0 0 0.5em $shadow-color;
     }
   
     p {
@@ -212,7 +224,7 @@ h3:target {
   }
 
 }
-
+ /* === PORTFOLIO === */
 .portfolio {
 
 /*   border: solid 1px green;//TEST */
@@ -258,12 +270,15 @@ h3:target {
   }
 }
 
+/* === EDUCATION === */
 .nackademin {
   a {
     text-decoration: none;
     color: $icon-color;
   }
 }
+
+/* === FOOTER === */
 
 footer {
   display: grid;
@@ -286,9 +301,13 @@ footer {
     padding-left: 2em;
 
     i {
-      color: $icon-color;
+      color: $nav-color;
       padding-right: 1em;
-      font-size: 1.2em;
+      font-size: 1.3em;
+    }
+
+    i:hover {
+      color: white;
     }
   }
   .contact {
@@ -296,12 +315,17 @@ footer {
     padding-left: 2em;
     
     a {
-      color: $icon-color;
+      color: $nav-color;
       text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
     }
   }
 } 
 
+/* ==== MEDIA QUERIES ==== */
 
 @media only screen and (max-width: 960px) {
   .navMenu li {
@@ -320,17 +344,15 @@ footer {
   }
 } 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 750px) {
   header {
 
     .navMenu {
-      
       li {
         font-size: 0.6em;
         padding: 2em 0.3em;
         margin-right: 0.5em;
-        margin-top: 0.6em;
-            
+        margin-top: 0.6em;   
       }
     }
   }
@@ -349,6 +371,12 @@ footer {
       "interests" 
       "languages";
     grid-gap: 1em;
+    .synopsis {
+      #photo {
+        width: 35%;
+      }
+    }
+
   }
   .footer {
     .links,
