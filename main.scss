@@ -86,6 +86,11 @@ header {
       margin-right: 1em;
       float: left;
     }
+
+    a:hover {
+      color: $titel-color;
+      font-weight: bold;
+    }
   
     a {
       text-decoration: none;
@@ -138,7 +143,7 @@ main {
       transition: ease 0.3s all; // shadow on hover
       
       &.letter-2 {
-        color: $nav-color;
+        color: $dark-color;
       }
 
       &.letter-1 {
@@ -192,9 +197,6 @@ h3:target {
 /* ======== ABOUT ME ========= */
 
 .objective {
-   /* border: solid 1px green; // TEST
-  h3, div { border: 1px solid red; } // TEST */
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
@@ -276,7 +278,7 @@ h3:target {
 
 
     div {
-      border: solid 1px orangered;//TEST
+      border: solid 1px $nav-color;
       text-align: center;
       width: 8em;
       height: 8em;
@@ -328,6 +330,11 @@ h3:target {
   a {
     text-decoration: none;
     color: $icon-color;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: $titel-color;
   }
 }
 

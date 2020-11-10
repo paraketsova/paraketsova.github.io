@@ -45,6 +45,10 @@ header .navMenu li {
   margin-right: 1em;
   float: left;
 }
+header .navMenu a:hover {
+  color: #ff3426;
+  font-weight: bold;
+}
 header .navMenu a {
   text-decoration: none;
   color: white;
@@ -91,7 +95,7 @@ main {
   transition: ease 0.3s all;
 }
 #text .wrapper span.letter-2 {
-  color: #ff8826;
+  color: #676768;
 }
 #text .wrapper span.letter-1 {
   color: #ff3426;
@@ -131,8 +135,6 @@ h3:target i {
 
 /* ======== ABOUT ME ========= */
 .objective {
-  /* border: solid 1px green; // TEST
-  h3, div { border: 1px solid red; } // TEST */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "title    title     title" "synopsis skills    softSkills" "synopsis interests languages";
@@ -194,7 +196,7 @@ h3:target i {
   align-items: center;
 }
 .portfolio .projects div {
-  border: solid 1px orangered;
+  border: solid 1px #ff8826;
   text-align: center;
   width: 8em;
   height: 8em;
@@ -251,6 +253,10 @@ h3:target i {
 .nackademin a {
   text-decoration: none;
   color: tomato;
+  font-weight: bold;
+}
+.nackademin a:hover {
+  color: #ff3426;
 }
 
 /* ======= FOOTER ======= */
