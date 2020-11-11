@@ -1,10 +1,46 @@
+
+Mariias Paraketsova raport:
 Scrum. Grafisk profil. Tillgänglighet.
-(Mariias Paraketsova raport)
+
+Scrum - är en metod för teamarbete som tillämpar 
+      principer från "Agile Software Development Manifesto".
+      Scrumteamet gör en produkt. Produkten är det värde som teamet skapar.
+      Scrum är det process framework som hjälper Scrumteamet bryta ett 
+      stort projekt i bitar (som kallade sprintar) och genomföra det gradvis, en bit 
+      i taget, samtidigt finns finns möjloghet för att addera 
+      förbättringar av produkten.
+      Scrum definierar tydligt strukturen på sprinten. En sprint börjar med sprintplanering 
+      och slutar med en sprintöversikt och retrospektiv. Mitt i sprinten reglerar Scrum bara 
+      dagliga möten på 15 minuter.
+
+          Målet med varje sprint är att skapa något av värde för kunden. Product Owner - 
+      produktägaren - är en viktig teammedlem som bestämmer vilket värde laget skapar 
+      i varje sprint och vilka kriterier detta värde och hela produkten ska uppfylla.
+      Han/hon formulerar alla idéer och önskemål för produkten i Product Backlog - detta 
+      är en ordnad lista över alla önskningar och idéer som Scrum-teamet kommer att arbeta med.
+
+         Varje lag måste ha en kvalificerad Scrum Master. Denna person är ansvarig för korrekt 
+      användning av Scrum, och för detta måste han djupt förstå kärnan i Scrum-metoden och kunna
+      förmedla den till resten av teammedlemar. Scrum Master är ansvarig för alla Scrum-evenemang.
 
 
+Grafisk profil - en lista med krav och önskemål för produktvisualisering. Ju mer komplett och 
+      detaljerad den grafiska profilen desto mer följd|riktig blir den resulterande produkten.
+      Kraven i den grafiska profilen bestämmer produktens design och alla ytterligare beslut 
+      som inte beskrivs i profilen bör fattas baserat på att de uppfyller de utfärdade kraven.
+      Om developerteamet inte följer kraven i den grafiska profilen kommer detta att leda till 
+      brist på gemensam produktdesign och produkten accepteras inte av produktägaren.
 
-Scrum -
-
-Grafisk profil -
-
-Tillgänglighet -
+Tillgänglighet till en webbplats eller applikation innebär att alla kan använda den, oavsett:
+      - användarens funktioner och begränsningar
+      - en teknisk anordning (dator, surfplatta eller mobiltelefon)
+      - webbläsare.
+      Tillgänglighetsstandarder för webbplatser och applikationer definierar tillgänglighetskriterier:
+      kontrast mellan teckensnitt och bakgrund, ytterligare textparametrar för alla bilder, 
+      möjligheten att hantera webbplatsen utan tangentbord och så vidare. Det finns internationell 
+      standart Web Content Accessibility Guidelines (WCAG) for tillgänglighetskrav.
+      Dessa krav är särskilt viktiga för webbplatser och applikationer från olika myndigheter, 
+      banker, sjukhus och utbildningsinsstruktur för att säkerställa lika rättigheter för alla 
+      människor, oavsett deras fysiska eller tekniska kapacitet. Dessutom påverkar tillgången 
+      på resurser också webbplatsens position i sökmotorerna och tas med i beräkningen vid rankning
+      och därmed säkerställer tillgängligheten att antalet potentiella kunder ökar.
