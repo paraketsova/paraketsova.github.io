@@ -9,6 +9,7 @@ $soft-dark-color: rgb(209, 209, 209);
 $background: #faf7f0;
 $light-navi-color: rgb(250, 210, 151);
 $shadow-color: #444;
+$navi-text: black;
 
 /* ========= MIXINS =========== */
 
@@ -62,7 +63,6 @@ header {
   grid-area: header;
   margin-top: 0;
   background-color: $nav-color;
-  color: white;
   width: 100%;
   box-shadow: 0 0 0.5em $shadow-color;
 
@@ -93,7 +93,7 @@ header {
   
     a {
       text-decoration: none;
-      color: white;
+      color: $navi-text;
     }
   
     .push {

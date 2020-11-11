@@ -23,7 +23,6 @@ header {
   grid-area: header;
   margin-top: 0;
   background-color: #ff8826;
-  color: white;
   width: 100%;
   box-shadow: 0 0 0.5em #444;
 }
@@ -51,7 +50,7 @@ header .navMenu a:hover {
 }
 header .navMenu a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 header .navMenu .push {
   margin-right: auto;

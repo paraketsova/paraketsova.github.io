@@ -53,6 +53,20 @@ const displayLetters = () => {
   });
 }
 
+
+
 document.addEventListener('DOMContentLoaded', displayLetters);
 
 window.addEventListener('resize', displayLetters);
+
+
+document.addEventListener('DOMContentLoaded', () => { // shange photo to avatar
+  let photo = document.getElementById('photo');
+  photo.addEventListener('click', function () {
+    if (photo.src.includes('img/avat4.png')) {
+      photo.src = "img/ponycorn-luck-v2.jpg";
+    } else {
+      photo.src = "img/avat4.png";
+    }
+  })
+})
