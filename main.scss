@@ -1,4 +1,4 @@
-/* ========= BASE ========= */
+/* ========= COLOR AND FONTS ========= */
 $primary-font: 'Roboto Mono', monospace;
 $primary-color: #333;
 $icon-color: tomato;
@@ -40,8 +40,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  
+body { 
   font: 100% $primary-font;
   color: $primary-color;
   min-height:100%;
@@ -103,7 +102,6 @@ header {
       float: left;
     }
   }
-
 }
 
 /* ========= MAIN CONTENT ========= */
@@ -215,8 +213,6 @@ h3:target {
 
     #photo {
       width: 45%;
-      /* border-radius: 50%; */
-      /* border: 0.2em $icon-color solid; */
       box-shadow: 0 0 0.8em $shadow-color;
     }
   
@@ -229,8 +225,6 @@ h3:target {
     .cv img {
       width: 3em;
       padding:1.0em;
-  /*     border-radius: 40%; */
-      
     }
 
     .cv img:hover {
@@ -383,7 +377,6 @@ footer {
     }
   }
   .contact {
-    /* border: solid 1px green;//TEST */
     padding-left: 2em;
     
     a {
@@ -458,7 +451,6 @@ footer {
         width: 2em;
       }
     }
-
   }
   .footer {
     .links,
@@ -483,6 +475,5 @@ footer {
         font-size: 1em;
       }
     }
-  
   }
 }

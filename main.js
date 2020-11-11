@@ -34,8 +34,7 @@ const displayLetters = () => {
     resolve();
   });
 
-  // then adjust width and height of each letter
-  const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));
+  const spans = Array.prototype.slice.call(document.getElementsByTagName('span'));  // then adjust width and height of each letter
   outputLayers.then(() => {
       return spans.map((span) => {
         setTimeout(() => {
@@ -44,8 +43,7 @@ const displayLetters = () => {
         }, 250);
       });  
   }).then(() => {
-      // then slide letters into view one at a time
-      let time = 250;
+      let time = 250; // then slide letters into view one at a time
       return spans.map((span) => {
         time += 25;
         setTimeout(() => {

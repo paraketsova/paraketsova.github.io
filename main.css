@@ -1,4 +1,4 @@
-/* ========= BASE ========= */
+/* ========= COLOR AND FONTS ========= */
 /* ========= MIXINS =========== */
 /* =========== BASE =========== */
 html {
@@ -149,8 +149,6 @@ h3:target i {
 }
 .objective .synopsis #photo {
   width: 45%;
-  /* border-radius: 50%; */
-  /* border: 0.2em $icon-color solid; */
   box-shadow: 0 0 0.8em #444;
 }
 .objective .synopsis p {
@@ -161,7 +159,6 @@ h3:target i {
 .objective .synopsis .cv img {
   width: 3em;
   padding: 1em;
-  /*     border-radius: 40%; */
 }
 .objective .synopsis .cv img:hover {
   box-shadow: 0.8em 0.8em 0.8em #676768;
@@ -298,7 +295,6 @@ footer .links #iconStackoverflow:hover {
   color: white;
 }
 footer .contact {
-  /* border: solid 1px green;//TEST */
   padding-left: 2em;
 }
 footer .contact a {
