@@ -15,7 +15,7 @@ $shadow-color: #444;
 @mixin div-color ($h-color, $h-bgcolor, $h-titel-color, $h-iconscolor, $h-border-color) {
   color: $h-color;
   background-color: $h-bgcolor;
-  box-shadow: 0 0 0.8em $shadow-color;
+  box-shadow: 0.8em 0.8em 0.8em $shadow-color;
   border-color: $h-border-color;
 
   .projectLink i,
@@ -228,6 +228,14 @@ h3:target {
 
     .cv img {
       width: 3em;
+      padding:1.0em;
+  /*     border-radius: 40%; */
+      
+    }
+
+    .cv img:hover {
+      box-shadow: 0.8em 0.8em 0.8em $dark-color;
+      background-color: $soft-dark-color;
     }
   }
 

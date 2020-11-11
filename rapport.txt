@@ -44,3 +44,5 @@ Tillgänglighet till en webbplats eller applikation innebär att alla kan använ
       människor, oavsett deras fysiska eller tekniska kapacitet. Dessutom påverkar tillgången 
       på resurser också webbplatsens position i sökmotorerna och tas med i beräkningen vid rankning
       och därmed säkerställer tillgängligheten att antalet potentiella kunder ökar.
+      --------------
+      

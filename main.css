@@ -160,6 +160,12 @@ h3:target i {
 }
 .objective .synopsis .cv img {
   width: 3em;
+  padding: 1em;
+  /*     border-radius: 40%; */
+}
+.objective .synopsis .cv img:hover {
+  box-shadow: 0.8em 0.8em 0.8em #676768;
+  background-color: #d1d1d1;
 }
 .objective .skills {
   grid-area: skills;
@@ -233,7 +239,7 @@ h3:target i {
 .portfolio .projects div:hover {
   color: black;
   background-color: #d1d1d1;
-  box-shadow: 0 0 0.8em #444;
+  box-shadow: 0.8em 0.8em 0.8em #444;
   border-color: #676768;
 }
 .portfolio .projects div:hover .projectLink i,
