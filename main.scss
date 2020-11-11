@@ -163,7 +163,7 @@ main {
       
       &.space {
         padding: 0;
-        min-width: 0.6em;
+        min-width: .6em;
         display: inline-block;
       }
     }
@@ -215,7 +215,7 @@ h3:target {
 
     #photo {
       width: 45%;
-      border-radius: 50%;
+      /* border-radius: 50%; */
       /* border: 0.2em $icon-color solid; */
       box-shadow: 0 0 0.8em $shadow-color;
     }
