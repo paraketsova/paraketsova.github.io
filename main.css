@@ -269,7 +269,7 @@ h3:target i {
 footer {
   display: grid;
   grid-area: footer;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 35% 65%;
   width: 100%;
   max-height: 100%;
   bottom: 0;
@@ -285,14 +285,16 @@ footer .links {
   padding-left: 2em;
 }
 footer .links #iconGitHub,
-footer .links #iconLinkedin {
+footer .links #iconLinkedin,
+footer .links #iconStackoverflow {
   color: #ff8826;
   padding-right: 1em;
   padding-top: 0.3em;
   font-size: 1.3em;
 }
 footer .links #iconGitHub:hover,
-footer .links #iconLinkedin:hover {
+footer .links #iconLinkedin:hover,
+footer .links #iconStackoverflow:hover {
   color: white;
 }
 footer .contact {
@@ -349,7 +351,7 @@ footer .contact a:hover {
 
   .footer .links,
 .footer .contact {
-    padding-left: 1em;
+    padding-left: 2em;
   }
   .footer .links i,
 .footer .contact i {
@@ -359,6 +361,12 @@ footer .contact a:hover {
   .footer .links a,
 .footer .contact a {
     font-size: 0.8em;
+  }
+  .footer .links #iconGitHub,
+.footer .links #iconLinkedin,
+.footer .links #iconStackoverflow {
+    padding-right: 0.3em;
+    font-size: 1em;
   }
 }
 
