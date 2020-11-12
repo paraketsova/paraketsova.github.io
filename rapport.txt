@@ -2,13 +2,11 @@
 Mariias Paraketsova raport:
 Scrum. Grafisk profil. Tillgänglighet.
 
-Scrum - är en metod för teamarbete som tillämpar 
-      principer från "Agile Software Development Manifesto".
-      Scrumteamet gör en produkt. Produkten är det värde som teamet skapar.
-      Scrum är det process framework som hjälper Scrumteamet bryta ett 
-      stort projekt i bitar (som kallade sprintar) och genomföra det gradvis, en bit 
-      i taget, samtidigt finns finns möjloghet för att addera 
-      förbättringar av produkten.
+Scrum - är en metod för teamarbete som tillämpar principer från "Agile Software Development
+      Manifesto". Scrumteamet gör en produkt. Produkten är det värde som teamet skapar.
+      Scrum är det process framework som hjälper Scrumteamet bryta ett stort projekt i bitar 
+      (som kallade sprintar) och genomföra det gradvis, en bit i taget, samtidigt finns finns 
+      möjloghet för att addera förbättringar av produkten.
       Scrum definierar tydligt strukturen på sprinten. En sprint börjar med sprintplanering 
       och slutar med en sprintöversikt och retrospektiv. Mitt i sprinten reglerar Scrum bara 
       dagliga möten på 15 minuter.
@@ -44,8 +42,8 @@ Tillgänglighet till en webbplats eller applikation innebär att alla kan använ
       människor, oavsett deras fysiska eller tekniska kapacitet. Dessutom påverkar tillgången 
       på resurser också webbplatsens position i sökmotorerna och tas med i beräkningen vid rankning
       och därmed säkerställer tillgängligheten att antalet potentiella kunder ökar.
-      --------------
-      Jag hoppas att jag har uppfyllt dessa WCAG kraven:
+      -------------------
+      Jag hoppas att jag har uppfyllt dessa WCAG kraven :
       1.1.1 (A). Beskriv med text allt innehåll som inte är text 
       1.3.2 (A) Presentera innehållet i en meningsfull ordning för alla
       1.3.4 (AA) Se till att allt innehåll presenteras rätt oavsett skärmens riktning.
