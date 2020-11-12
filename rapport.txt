@@ -46,7 +46,7 @@ Tillgänglighet till en webbplats eller applikation innebär att alla kan använ
       och därmed säkerställer tillgängligheten att antalet potentiella kunder ökar.
       --------------
       Jag hoppas att jag har uppfyllt dessa WCAG kraven:
-      1.1.1 (A). Beskriv med text allt innehåll som inte är text (alt och )
+      1.1.1 (A). Beskriv med text allt innehåll som inte är text 
       1.3.2 (A) Presentera innehållet i en meningsfull ordning för alla
       1.3.4 (AA) Se till att allt innehåll presenteras rätt oavsett skärmens riktning.
       1.4.3 (AA) Använd tillräcklig kontrast mellan text och bakgrund
