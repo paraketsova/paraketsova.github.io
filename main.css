@@ -64,7 +64,7 @@ main {
   padding: 1em 2em;
 }
 
-/* ======= TEXT: NAME + LAST NAME ======= */
+/* ======= FALLING TEXT: NAME + LAST NAME ======= */
 #text {
   font-family: "Roboto Mono", monospace;
   margin-top: 1em;
@@ -149,6 +149,7 @@ h3:target i {
 .objective .synopsis #photo {
   width: 45%;
   box-shadow: 0 0 0.8em #444;
+  cursor: pointer;
 }
 .objective .synopsis p {
   text-align: justify;

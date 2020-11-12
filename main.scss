@@ -111,7 +111,7 @@ main {
   padding: 1em 2em;
 }
 
-/* ======= TEXT: NAME + LAST NAME ======= */
+/* ======= FALLING TEXT: NAME + LAST NAME ======= */
 
 #text { // transormation for name and last name (works together with Js part)
   font-family: $primary_font;
@@ -214,6 +214,7 @@ h3:target {
     #photo {
       width: 45%;
       box-shadow: 0 0 0.8em $shadow-color;
+      cursor: pointer;
     }
   
     p {
