@@ -1,4 +1,4 @@
 # paraketsova.github.io
-Mariia Paraketsova personal page
+This is my old personal website personal page
 --------------------------------
 https://paraketsova.github.io/
