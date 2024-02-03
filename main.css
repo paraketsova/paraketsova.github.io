@@ -22,7 +22,7 @@ header {
   display: grid;
   grid-area: header;
   margin-top: 0;
-  background-color: #ff8826;
+  background-color: rgb(255, 136, 38);
   width: 100%;
   box-shadow: 0 0 0.5em #444;
 }
@@ -52,10 +52,11 @@ header .navMenu a {
   text-decoration: none;
   color: black;
 }
-header .navMenu .push {
+header .navMenu .logo {
   margin-right: auto;
-  padding-left: 0em;
+  padding-left: 0;
   float: left;
+  color: white;
 }
 
 /* ========= MAIN CONTENT ========= */
@@ -65,7 +66,7 @@ main {
 }
 
 /* ======= FALLING TEXT: NAME + LAST NAME ======= */
-#text {
+#text { /* transformation for name and last name (works together with Js part) */
   font-family: "Roboto Mono", monospace;
   margin-top: 1em;
   font-size: 3em;
@@ -81,23 +82,21 @@ main {
   display: inline-block;
   top: -900px;
   position: relative;
-  height: 150px;
-  /* default */
-  width: 90px;
-  /* default */
-  transition: ease 0.3s all;
+  height: 150px; /* default */
+  width: 90px; /* default */
+  transition: ease 0.3s; /* falling letters */
 }
 #text .wrapper span {
   position: absolute;
   top: 0;
   right: 0;
-  transition: ease 0.3s all;
+  transition: ease 0.3s; /* shadow on hover */
 }
 #text .wrapper span.letter-2 {
-  color: #676768;
+  color: #89a2fa;
 }
 #text .wrapper span.letter-1 {
-  color: #ff3426;
+  color: #0542f7;
   z-index: 1;
 }
 #text .wrapper span.letter-1:hover {
@@ -114,16 +113,19 @@ main {
   display: inline-block;
 }
 
-/* === TITELS === */
-h3 i {
-  color: #ff8826;
+/* === titles === */
+main h3:hover {
+  color: #0542f7;
 }
-h3 i:hover {
-  color: tomato;
+main h3 i {
+  color: rgb(255, 136, 38);
+}
+main h3 i:hover {
+  color: #0542f7;
 }
 
 h3:target {
-  background-color: #ff8826;
+  background-color: rgb(255, 136, 38);
   color: #fff;
   padding: 0.5em;
   box-shadow: 0 0 0.5em #444;
@@ -138,6 +140,8 @@ h3:target i {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "title    title     title" "synopsis skills    softSkills" "synopsis interests languages";
   grid-gap: 2em;
+  /*==== OBJECTIVE SECTION'S GRID ====*/
+  /*=== OBJECTIVE SECTION'S STYLING ===*/
 }
 .objective .title {
   grid-area: title;
@@ -148,8 +152,9 @@ h3:target i {
 }
 .objective .synopsis #photo {
   width: 45%;
-  box-shadow: 0 0 0.8em #444;
+  box-shadow: 0 0 0.8em #89a2fa;
   cursor: pointer;
+  padding: 0;
 }
 .objective .synopsis p {
   text-align: justify;
@@ -158,11 +163,11 @@ h3:target i {
 }
 .objective .synopsis .cv img {
   width: 3em;
-  padding: 1em;
+  padding: 0;
 }
 .objective .synopsis .cv img:hover {
-  box-shadow: 0.8em 0.8em 0.8em #676768;
-  background-color: #d1d1d1;
+  box-shadow: 0.8em 0.8em 0.8em #89a2fa;
+  background-color: #ccdafd;
 }
 .objective .skills {
   grid-area: skills;
@@ -199,7 +204,7 @@ h3:target i {
   align-items: center;
 }
 .portfolio .projects div {
-  border: solid 1px #ff8826;
+  border: solid 1px rgb(255, 136, 38);
   text-align: center;
   width: 8em;
   height: 8em;
@@ -210,17 +215,16 @@ h3:target i {
   text-decoration: none;
 }
 .portfolio .projects div i {
-  color: tomato;
+  color: rgb(255, 136, 38);
   font-size: 1.5em;
   padding-bottom: 0.2em;
 }
-.portfolio .projects div .titelProject {
+.portfolio .projects div .titleProject {
   text-decoration: none;
-  color: tomato;
+  color: rgb(255, 136, 38);
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 0;
   padding-bottom: 0;
   font-size: 0.9em;
 }
@@ -235,31 +239,29 @@ h3:target i {
 }
 .portfolio .projects div:hover {
   color: black;
-  background-color: #d1d1d1;
-  box-shadow: 0.8em 0.8em 0.8em #444;
-  border-color: #676768;
+  background-color: #ccdafd;
+  box-shadow: 0.8em 0.8em 0.8em #89a2fa;
+  border-color: #89a2fa;
 }
 .portfolio .projects div:hover .projectLink i,
 .portfolio .projects div:hover .projectLink p {
-  color: tomato;
+  color: #0542f7;
 }
-.portfolio .projects div:hover .projectLink i:hover,
-.portfolio .projects div:hover .projectLink p:hover,
-.portfolio .projects div:hover i.fab:hover {
+.portfolio .projects div:hover .projectLink:hover i, .portfolio .projects div:hover .projectLink:hover p {
   color: white;
 }
-.portfolio .projects div:hover .iconRepoProject i {
-  color: black;
+.portfolio .projects div:hover .iconRepoProject i:hover {
+  color: white;
 }
 
 /* ====== EDUCATION ====== */
-.nackademin a {
+.experience a {
   text-decoration: none;
-  color: tomato;
+  color: #0542f7;
   font-weight: bold;
 }
-.nackademin a:hover {
-  color: #ff3426;
+.experience a:hover {
+  color: #0542f7;
 }
 
 /* ======= FOOTER ======= */
@@ -270,7 +272,7 @@ footer {
   width: 100%;
   max-height: 100%;
   bottom: 0;
-  background-color: #676768;
+  background-color: rgb(103, 103, 104);
   color: white;
 }
 footer h3 {
@@ -278,27 +280,33 @@ footer h3 {
   margin-top: 1em;
   margin-bottom: 0.6em;
 }
+footer h3 i {
+  color: rgb(255, 136, 38);
+}
+footer h3 i:hover {
+  color: white;
+}
 footer .links {
   padding-left: 2em;
 }
-footer .links #iconGitHub,
+footer .links .iconGitHub,
 footer .links #iconLinkedin,
-footer .links #iconStackoverflow {
-  color: #ff8826;
+footer .links #iconPersonalSite {
+  color: rgb(255, 136, 38);
   padding-right: 1em;
   padding-top: 0.3em;
   font-size: 1.3em;
 }
-footer .links #iconGitHub:hover,
+footer .links .iconGitHub:hover,
 footer .links #iconLinkedin:hover,
-footer .links #iconStackoverflow:hover {
+footer .links #iconPersonalSite:hover {
   color: white;
 }
 footer .contact {
   padding-left: 2em;
 }
 footer .contact a {
-  color: #ff8826;
+  color: rgb(255, 136, 38);
   text-decoration: none;
 }
 footer .contact a:hover {
@@ -311,7 +319,6 @@ footer .contact a:hover {
     font-size: 0.7em;
     padding: 0;
   }
-
   .objective {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title    title" "synopsis softSkills" "synopsis interests" "skills   languages";
@@ -328,11 +335,9 @@ footer .contact a:hover {
     margin-right: 0.5em;
     margin-top: 0.6em;
   }
-
   #text {
     font-size: 1.7em;
   }
-
   .objective {
     grid-template-columns: 1fr;
     grid-template-areas: "title" "synopsis" "skills" "softSkills" "interests" "languages";
@@ -344,23 +349,19 @@ footer .contact a:hover {
   .objective .synopsis .cv img {
     width: 2em;
   }
-
-  .footer .links,
-.footer .contact {
+  .footer .contact {
     padding-left: 2em;
   }
-  .footer .links i,
-.footer .contact i {
+  .footer .contact i {
     padding-right: 0.5em;
     font-size: 1em;
   }
-  .footer .links a,
-.footer .contact a {
+  .footer .contact a {
     font-size: 0.8em;
   }
-  .footer .links #iconGitHub,
-.footer .links #iconLinkedin,
-.footer .links #iconStackoverflow {
+  .footer .links .iconGitHub,
+  .footer .links #iconLinkedin,
+  .footer .links #iconPersonalSite {
     padding-right: 0.3em;
     font-size: 1em;
   }

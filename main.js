@@ -1,16 +1,17 @@
+// ---- Title transformation (works together with SCSS part) ---- //
 
-const text = 'Mariia Paraketsova'; // transormation for name and last name (works together with SCSS part)
+const text = 'Mariia Paraketsova';
 
-const createLetterArray = (string) => { // this function turns a string into an array
+const createLetterArray = (string) => { // turn a string into an array
   return string.split('');
 }
 
-const createLetterLayers = (array) => {  // this function creates letter layers wrapped in span tags
+const createLetterLayers = (array) => {  // letter layers wrapped in span tags
   return array.map((letter) => {
     let layer = '';
     for (let i = 1; i <= 2; i++) {  //specify # of layers per letter
       
-      if (letter == ' ') {           // if letter is a space
+      if (letter === ' ') {           // if letter is a space
         layer += '<span class="space"></span>';
       } else {
         layer += '<span class="letter-'+i+'">'+letter+'</span>';
@@ -59,14 +60,17 @@ document.addEventListener('DOMContentLoaded', displayLetters);
 
 window.addEventListener('resize', displayLetters);
 
-
-document.addEventListener('DOMContentLoaded', () => { // shange photo to avatar
+// ---- CHANGE PHOTO BY CLICKING ---- //
+document.addEventListener('DOMContentLoaded', () => {
   let photo = document.getElementById('photo');
   photo.addEventListener('click', function () {
-    if (photo.src.includes('img/avat4.png')) {
-      photo.src = "img/ponycorn-luck-v2.jpg";
+
+    if (photo.src.includes('img/photo-MP.png')) {
+      photo.src = "img/pon.jpeg";
+      photo.alt = "Mariia's avatar";
     } else {
-      photo.src = "img/avat4.png";
+      photo.src = "img/photo-MP.png";
+      photo.alt = "Mariia's photo"
     }
   })
 })

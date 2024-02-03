@@ -8,14 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./icons/fontawesome/css/all.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/pon.ico">
 </head>
 <body>
 
   <header>
     <nav class="nav" id="navbar">
       <ul class="navMenu">
-        <li class="push"><div class="theme-switch"></div></li>
+        <li class="logo"><i class="fas fa-kiwi-bird"></i></li>
         <li><a href="#aboutMe">About me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#education">Education</a></li>
@@ -29,32 +29,36 @@
     <div aria-label="text animation - Mariia Paraketsova" id="text"><!-- content generated with JS --></div>
     
     <section class="objective">
-      <h3 class="title" id="aboutMe">About me     <a href="#navbar"><i alt="icon for link to up" class="fas fa-arrow-alt-circle-up"></i></a></h3>
+      <h3 class="title" id="aboutMe">About me     <a href="#navbar"><i class="fas fa-arrow-alt-circle-up"></i></a></h3>
 
       <div class="synopsis">
-        <img aria-label="photo_portrait/avatar" id="photo" src="img/avat4.png" alt="Mariia's photo">
-        <p>Web developer 
-          fullstack student  
-          with an engineering degree and project management experience 
-          in Industrial Heating Cable Systems. <br> I'm looking for an intership and new intresting projects.
+        <img aria-label="photo_portrait/avatar" id="photo" src="img/photo-MP.png" alt="Mariia's photo">
+        <p>Fullstack Web Developer/ServiceNow Developer with an engineering degree and project management experience.
+          <br> I'm looking for an intership and new intresting projects.
         </p>
-        <div  class="cv"> <a href="./CV-Mariia-Paraketsova-2020.pdf"  target="_blank"><img alt="icon for link to CV.pdf" aria-label="icon for link to CV.pdf" src="cv-hand.png"></a></div>
+        <div  class="cv">
+          <a href="./img/Mariia-Paraketsova-CV-2024-(sv).pdf"  target="_blank">
+            <img alt="icon for link to CV.pdf" aria-label="icon for link to CV.pdf" src="./img/icons8-resume-60.png">
+          </a>
+        </div>
       </div>
 
       <div class="box skills">
         <p>Skills</p>
         <ul>
-          <li>Web development (JavaScript, HTML, CSS)</li>
-          <li>Project Management (Heating Cable Solutions)</li>
-          <li>Marketing, B2B and B2C sales</li>
-          <li>Chemical Engineering</li>
+          <li>JavaScript, TypeScript</li>
+          <li>React, Next.js, Angular</li>
+          <li>Node.js, C#, PHP</li>
+          <li>MySQL, MariaSQL, MongoDB</li>
+          <li>REST APIs, Webflow</li>
+          <li>Git, Agile, Scrum</li>
         </ul>
       </div>
 
       <div class="box softSkills">
         <p>Soft skills</p>
         <ul>
-          <li>Work planning and organisation</li>
+          <li>Work planning and organisation</li>
           <li>Problem solving</li>
           <li>Teamwork and collaboration</li>
           <li>Positive attitude</li>
@@ -68,91 +72,88 @@
           <li>Coding and learning new technologies</li>
           <li>Volunteering for "Speak Up!" non-profit project 
             dedicated to preventing domestic violence</li>
-          <li>Gardening</li>
+          <li>Miniature painting</li>
+          <li>Jazz</li>
         </ul>
       </div>
 
       <div class="box languages">
         <p>Languages</p>
         <ul>
-          <li>Russian</li>
           <li>English</li>
           <li>Swedish</li>
+          <li>Russian</li>
         </ul>
       </div>
     </section>
 
     <section class="portfolio">
-      <h3 id="portfolio">Portfolio   <a href="#navbar"><i alt="icon for link to up" class="fas fa-arrow-alt-circle-up"></i></a></h3>
-      <p class="textMyProgects">My recent projects:</p>
+      <h3 id="portfolio">Portfolio   <a href="#navbar"><i class="fas fa-arrow-alt-circle-up"></i></a></h3>
+      <p class="textMyProjects">My apps and pet projects:</p>
 
       <div class="projects">
+        <div class="Midlibrary">
+        <a class="projectLink" href="https://midlibrary.io/" target="_blank"><i class="fas fa-images"></i>
+            <p class="titleProject">Midlibrary.io</p></a>
+          <p>Webflow,JavaScript, PHP</p>
+
+        </div>
+
+        <div class="paraketsova-com">
+        <a class="projectLink" href="https://paraketsova.com" target="_blank"><i class="fas fa-kiwi-bird"></i>
+            <p class="titleProject">paraketsova.com</p></a>
+          <p>Next.js</p>
+          <a class="iconRepoProject" href="https://github.com/paraketsova/nextjs-blog" target="_blank"><i class="fab fa-github iconGitHub"></i></a>
+        </div>
+
         <div class="quiz">
-          <a class="projectLink" href="https://paraketsova.github.io/QUIZ" target="_blank"><i  alt="icon for link to Quiz project demo" class="fas fa-question-circle"></i>
-          <p class="titelProject"> Quiz Game</p></a>
-          <p>Individual assignment</p>
-          <a class="iconRepoProject" href="https://github.com/paraketsova/QUIZ" target="_blank"><i alt="icon for link to Quiz project repo" id="iconGitHub" class="fab fa-github"></i></a>
+          <a class="projectLink" href="https://paraketsova.github.io/birthday-quiz/" target="_blank"><i class="fas fa-puzzle-piece"></i>
+          <p class="titleProject"> Birthday Quiz</p></a>
+          <p>Javascript</p>
+          <a class="iconRepoProject" href="https://github.com/paraketsova/birthday-quiz" target="_blank"><i class="fab fa-github iconGitHub"></i></a>
         </div>
 
-        <div class="acme">
-          <a class="projectLink" href="https://paraketsova.github.io/ACME-Events" target="_blank"><i  alt="icon for link to web site project demo" class="fas fa-laptop"></i>
-          <p class="titelProject"> Events website</p></a>
-          <p>Group <br> assignment</p>
-          <a class="iconRepoProject" href="https://github.com/paraketsova/ACME-Events" target="_blank"><i  alt="icon for link to web site project repo" id="iconGitHub" class="fab fa-github"></i></a>
-        </div>
-
-        <div class="yatzy">
-          <a class="projectLink" href="https://paraketsova.github.io/NA-yatzy" target="_blank"><i  alt="icon for link to Yatzy project demo" class="fas fa-dice"></i>
-          <p class="titelProject">Yatzy Game</p></a>
-          <p>Group <br> assignment</p>
-          <a class="iconRepoProject" href="https://github.com/paraketsova/NA-yatzy" target="_blank"><i alt="icon for link to Yatzy project repo" id="iconGitHub" class="fab fa-github"></i></a>
+        <div class="star-wars">
+          <a class="projectLink" href="https://paraketsova.github.io/star-wars-app" target="_blank"><i class="fas fa-jedi"></i>
+          <p class="titleProject">Star Wars App</p></a>
+          <p>React</p>
+          <a class="iconRepoProject" href="https://github.com/paraketsova/star-wars-app" target="_blank"><i class="fab fa-github iconGitHub"></i></a>
         </div>
 
         <div class="ship">
-          <a class="projectLink" href="https://paraketsova.github.io/ship_animation" target="_blank"><i alt="icon for link to Animatioin project demo" class="fas fa-anchor"></i>
-          <p class="titelProject">Animation</p></a>
-          <p>Individual assignment</p>
-          <a class="iconRepoProject" href="https://github.com/paraketsova/ship_animation" target="_blank"><i alt="icon for link to Animatioin project repo" id="iconGitHub" class="fab fa-github"></i></a>
+          <a class="projectLink" href="https://paraketsova.github.io/ship_animation" target="_blank"><i class="fas fa-anchor"></i>
+          <p class="titleProject">Animation</p></a>
+          <p>CSS animation</p>
+          <a class="iconRepoProject" href="https://github.com/paraketsova/ship_animation" target="_blank"><i class="fab fa-github iconGitHub"></i></a>
         </div>
       </div>
     </section>
 
-    <section class="nackademin">
-      <h3 id="education">Education   <a href="#navbar"><i alt="icon for link to up" class="fas fa-arrow-alt-circle-up"></i></a></h3>
-      <p>I'm a student at NACKADEMIN,
-        studying Fullstack webdevelopment open source.
+    <section class="experience">
+      <h3 id="education">Education  && Experience <a href="#navbar"><i class="fas fa-arrow-alt-circle-up"></i></a></h3>
+      <p> I have graduated from <a href=https://nackademin.se target="_blank" rel="noopener noreferrer">Nackademin YH</a> (Full Stack Web Development) last year.
+        The program focused on creating dynamic, user-friendly applications with modern technologies.
+        Course highlights: JavaScript, HTML, CSS, NodeJS, React, MySQL, MongoDB, PHP, CMS, Git, Agile.
       </p>
-      <p><a  alt="link to Nackademin website" href=https://nackademin.se target="_blank">NACKADEMIN</a> provides professional higher education services. 
-        The Company operates A-level education and advanced vocational education 
-        in the areas of construction, design, IT, business, and health
+      <p>I finished my 6-month internship in <a href=https://www.scania.com target="_blank" rel="noopener noreferrer">Scania</a>.
+        As a Software Engineer in Scania I created an internal booking system for the company’s employees.
       </p>
-      <p>NACKADEMIN currently educate almost 2,000 students in various fields and 
-        have extensive experience of courses and educations based on the needs of the 
-        business community.
-      </p>
-      <p>Areas include construction, IT, communication, electrical engineering, healthcare and design.
-        This year’s statistics show that nearly 90% of NACKADEMIN students have jobs 
-        after graduation.
-      </p>
-      <p>The goal of the Full Stack Web Developer program is to equip learners 
-        with the unique skills they need to build database-backed APIs and web applications. 
-        A graduate of this program will be able to design and build databases for software 
-        applications, create and deploy database-backed web APIs, and secure and manage user 
-        authentication and access control for an application backend.
+      <p>I work as a volunteer web developer on <a href=https://midlibrary.io target="_blank" rel="noopener noreferrer">Midlibrary</a> a non-profit educational initiative run by a group of dedicated Midjourney enthusiasts and volunteers.
+        I also participate in a small-scale open-source social network <a href=https://gamma.freefeed.net target="_blank" rel="noopener noreferrer">FreeFeed.net</a>
       </p>
     </section>  
   </main>
 
   <footer class="footer">
     <div class="links">
-      <h3 id="links">Links <a href="#navbar"><i alt="icon for link to up" class="fas fa-arrow-alt-circle-up"></i></a></h3>
-      <a  href="https://github.com/paraketsova" target="_blank"><i alt="icon for link to GitHub profil" id="iconGitHub" class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/mariia-paraketsova-2a3513154/" target="_blank"><i alt="icon for link to Linkedin profil" id="iconLinkedin" class="fab fa-linkedin"></i></a>
-      <a href="https://stackoverflow.com/users/14619660/paraketsova" target="_blank"><i alt="icon for link to Stckoverflow profil" id="iconStackoverflow" class="fab fa-stack-overflow"></i></a>
+      <h3 id="links">Links <a href="#navbar"><i class="fas fa-arrow-alt-circle-up"></i></a></h3>
+      <a href="https://paraketsova.com" target="_blank"><i id="iconPersonalSite" class="fas fa-kiwi-bird"></i></a>
+      <a  href="https://github.com/paraketsova" target="_blank"><i class="fab fa-github iconGitHub"></i></a>
+      <a href="https://www.linkedin.com/in/mariia-paraketsova-2a3513154/" target="_blank"><i id="iconLinkedin" class="fab fa-linkedin"></i></a>
     </div>
     <div class="contact">
-      <h3 id="contact">Contact <a href="#navbar"><i alt="icon for link to up" class="fas fa-arrow-alt-circle-up"></i></a></h3>
-      <a href="mailto:paraketsova@gmail.com?subject=Mail from paraketsova.github.io">paraketsova@gmail.com</a>
+      <h3 id="contact">Contact <a href="#navbar"><i class="fas fa-arrow-alt-circle-up"></i></a></h3>
+      <a href="mailto:paraketsova@gmail.com?subject=Mail%20from%20paraketsova.github.io">paraketsova@gmail.com</a>
     </div>
   </footer>
   <script src="main.js"></script>
