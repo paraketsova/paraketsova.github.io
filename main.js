@@ -1,4 +1,4 @@
-// ---- Title transformation (works together with SCSS part) ---- //
+// ===== Title transformation (works together with SCSS part) === //
 
 const text = 'Mariia Paraketsova';
 
@@ -10,7 +10,6 @@ const createLetterLayers = (array) => {  // letter layers wrapped in span tags
   return array.map((letter) => {
     let layer = '';
     for (let i = 1; i <= 2; i++) {  //specify # of layers per letter
-      
       if (letter === ' ') {           // if letter is a space
         layer += '<span class="space"></span>';
       } else {
@@ -30,7 +29,7 @@ const createLetterContainers = (array) => {  // this function wraps each letter 
 }
 
 const displayLetters = () => {
-  const outputLayers = new Promise(function(resolve, reject) {  // use a promise to output text layers into DOM first
+  const outputLayers = new Promise(function(resolve) {  // use a promise to output text layers into DOM first
     document.getElementById('text').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
     resolve();
   });
@@ -54,17 +53,14 @@ const displayLetters = () => {
   });
 }
 
+document.addEventListener('DOMContentLoaded', displayLetters); // execute the function when the page is first loaded
 
+window.addEventListener('resize', displayLetters); //execute function on page reload
 
-document.addEventListener('DOMContentLoaded', displayLetters);
-
-window.addEventListener('resize', displayLetters);
-
-// ---- CHANGE PHOTO BY CLICKING ---- //
+// ========= CHANGE PHOTO BY CLICKING ====== //
 document.addEventListener('DOMContentLoaded', () => {
   let photo = document.getElementById('photo');
   photo.addEventListener('click', function () {
-
     if (photo.src.includes('img/photo-MP.png')) {
       photo.src = "img/pon.jpeg";
       photo.alt = "Mariia's avatar";

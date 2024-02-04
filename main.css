@@ -16,6 +16,10 @@ body {
   grid-template-areas: "header" "main" "footer";
   grid-gap: 0;
 }
+body a {
+  color: rgb(255, 136, 38);
+  text-decoration: none;
+}
 
 /* ======== HEADER AND NAVIGATION ======== */
 header {
@@ -49,7 +53,6 @@ header .navMenu a:hover {
   font-weight: bold;
 }
 header .navMenu a {
-  text-decoration: none;
   color: black;
 }
 header .navMenu .logo {
@@ -211,9 +214,6 @@ h3:target i {
   margin-bottom: 1em;
   padding: 1em;
 }
-.portfolio .projects div a {
-  text-decoration: none;
-}
 .portfolio .projects div i {
   color: rgb(255, 136, 38);
   font-size: 1.5em;
@@ -254,9 +254,8 @@ h3:target i {
   color: white;
 }
 
-/* ====== EDUCATION ====== */
+/* ====== EDUCATION  && EXPERIENCE ====== */
 .experience a {
-  text-decoration: none;
   color: #0542f7;
   font-weight: bold;
 }
@@ -307,7 +306,6 @@ footer .contact {
 }
 footer .contact a {
   color: rgb(255, 136, 38);
-  text-decoration: none;
 }
 footer .contact a:hover {
   color: white;
@@ -349,15 +347,15 @@ footer .contact a:hover {
   .objective .synopsis .cv img {
     width: 2em;
   }
-  .footer .contact {
-    padding-left: 2em;
-  }
-  .footer .contact i {
+  .footer .contact i, .footer .links i {
     padding-right: 0.5em;
     font-size: 1em;
   }
-  .footer .contact a {
+  .footer .contact a, .footer .links a {
     font-size: 0.8em;
+  }
+  .footer .contact {
+    padding-left: 2em;
   }
   .footer .links .iconGitHub,
   .footer .links #iconLinkedin,
