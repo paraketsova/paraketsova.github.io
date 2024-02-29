@@ -1,4 +1,4 @@
-// ===== Title transformation (works together with SCSS part) === //
+// ===== Title transformation (works together with SCSS part) ===== //
 
 const text = 'Mariia Paraketsova';
 
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', displayLetters); // execute the fu
 
 window.addEventListener('resize', displayLetters); //execute function on page reload
 
-// ========= CHANGE PHOTO BY CLICKING ====== //
+// ========= CHANGE PHOTO BY CLICKING ======== //
 document.addEventListener('DOMContentLoaded', () => {
   let photo = document.getElementById('photo');
   photo.addEventListener('click', function () {

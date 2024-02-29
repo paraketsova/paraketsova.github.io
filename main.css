@@ -197,6 +197,10 @@ h3:target i {
 .objective ul li {
   padding-left: -2em;
 }
+.objective .skills img {
+  margin-top: 1.5rem;
+  height: 5rem;
+}
 
 /* ====== PORTFOLIO ====== */
 .portfolio .projects {
