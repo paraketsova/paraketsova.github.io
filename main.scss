@@ -235,16 +235,27 @@ h3:target {
       text-align: justify;
       padding-top: 1em;
       padding-right: 1em;
+      font-weight: bold;
     }
 
-    .cv img {
-      width: 3em;
-      padding: 0;
-    }
+    .cv {
+      h3 {
+        color: $nav-color;
+      }
 
-    .cv img:hover {
-      box-shadow: 0.8em 0.8em 0.8em $title-shadow-colour;
-      background-color: $soft-dark-color;
+      h3:hover {
+        color: $icon-color;
+      }
+
+      img {
+        width: 3em;
+        padding: 0;
+      }
+
+      img:hover {
+        box-shadow: 0.8em 0.8em 0.8em $title-shadow-colour;
+        background-color: $soft-dark-color;
+      }
     }
   }
 
@@ -347,13 +358,13 @@ h3:target {
 
 /* ====== EDUCATION  && EXPERIENCE ====== */
 .experience {
-  a {
+  .ed-link {
     color: $icon-color;
     font-weight: bold;
   }
 
-  a:hover {
-    color: $title-color;
+  .ed-link:hover {
+    color: $nav-color;
   }
 }
 

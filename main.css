@@ -163,6 +163,13 @@ h3:target i {
   text-align: justify;
   padding-top: 1em;
   padding-right: 1em;
+  font-weight: bold;
+}
+.objective .synopsis .cv h3 {
+  color: rgb(255, 136, 38);
+}
+.objective .synopsis .cv h3:hover {
+  color: #0542f7;
 }
 .objective .synopsis .cv img {
   width: 3em;
@@ -259,12 +266,12 @@ h3:target i {
 }
 
 /* ====== EDUCATION  && EXPERIENCE ====== */
-.experience a {
+.experience .ed-link {
   color: #0542f7;
   font-weight: bold;
 }
-.experience a:hover {
-  color: #0542f7;
+.experience .ed-link:hover {
+  color: rgb(255, 136, 38);
 }
 
 /* ======= FOOTER ======= */
